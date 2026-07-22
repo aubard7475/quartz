@@ -3,7 +3,7 @@ configuration:
   pageTitle: Cookie's Notes
   pageTitleSuffix: " Cookie's Notes"
   enableSPA: true
-  enablePopovers: true
+  enablePopovers: false
   analytics:
     provider: plausible
   locale: en-US
