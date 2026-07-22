@@ -16,9 +16,9 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: IBM Plex Mono
-      body: Lexend
-      code: IBM Plex Mono
+      header: "Lexend"
+      body: "Lexend"
+      code: "JetBrains Mono"
     colors:
       lightMode:
         light: "#161618"
@@ -31,15 +31,15 @@ configuration:
         highlight: "#ED701426"
         textHighlight: "#b3aa0288"
       darkMode:
-        light: "#18110D"          # background (very dark warm brown)
-        lightgray: "#30241C"      # borders/cards
-        gray: "#6B5A4A"           # muted text
-        darkgray: "#D8C7B8"       # normal text
-        dark: "#F5E9DF"           # headings
-        secondary: "#ED7014"      # links/accent orange
-        tertiary: "#FF9A4D"       # lighter orange accent
-        highlight: rgba(237, 112, 20, 0.15)
-        textHighlight: "#ED701488"
+        light: "#161618"
+        lightgray: "#393639"
+        gray: "#646464"
+        darkgray: "#d4d4d4"
+        dark: "#ebebec"
+        secondary: "#ED7014"
+        tertiary: "#ED7014"
+        highlight: "#ED701426"
+        textHighlight: "#b3aa0288"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: false
@@ -54,7 +54,7 @@ plugins:
     enabled: true
     options:
       theme:
-        light: github-dark
+        light: dark-plus
         dark: github-dark
       keepBackground: false
     order: 20
@@ -99,7 +99,7 @@ plugins:
     enabled: false
     order: 92
   - source: github:quartz-community/fonts
-    enabled: true
+    enabled: false
   - source: github:quartz-community/remove-draft
     enabled: true
   - source: github:quartz-community/explicit-publish
