@@ -8,7 +8,7 @@ title: Notes
 <img src="/images/leaf.png" width="256">
 </div>
 
-<div style="flex: 1; text-align: right;">
+<div style="flex: 1; text-align: left;">
 
 Hi.
 
