@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: Notes
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -16,8 +16,8 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
+      header: Lexend
+      body: Lexend
       code: IBM Plex Mono
     colors:
       lightMode:
@@ -31,15 +31,15 @@ configuration:
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#fff23688"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#18110D"          # background (very dark warm brown)
+        lightgray: "#30241C"      # borders/cards
+        gray: "#6B5A4A"           # muted text
+        darkgray: "#D8C7B8"       # normal text
+        dark: "#F5E9DF"           # headings
+        secondary: "#ED7014"      # links/accent orange
+        tertiary: "#FF9A4D"       # lighter orange accent
+        highlight: rgba(237, 112, 20, 0.15)
+        textHighlight: "#ED701488"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
