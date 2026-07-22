@@ -68,11 +68,11 @@ plugins:
     enabled: true
     order: 40
   - source: github:quartz-community/table-of-contents
-    enabled: true
-    order: 50
+    enabled: false
+    order: 60
     layout:
-      position: right
-      priority: 30
+      position: left
+      priority: 40
   - source: github:quartz-community/crawl-links
     enabled: true
     options:
@@ -148,7 +148,7 @@ plugins:
       title: Explorer
       folderClickBehavior: collapse # "link" to navigate or "collapse" to toggle
       folderDefaultState: collapsed # "collapsed" or "open"
-      useSavedState: true
+      useSavedState: false
     layout:
       position: left
       priority: 50
@@ -217,11 +217,10 @@ plugins:
       position: afterBody
       priority: 10
   - source: github:quartz-community/footer
-    enabled: false
+    enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        "Is everything in these notes accurate?": "https://aubard7475.github.io/quartz/images/idk.jpg"
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer

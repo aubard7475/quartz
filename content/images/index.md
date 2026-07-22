@@ -1,0 +1,1 @@
+For some reason, it didn't let me have text in the footer that wasn't a link.
