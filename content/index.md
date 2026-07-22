@@ -1,5 +1,5 @@
 ---
-title: Notes
+title: " "
 ---
 
 <div style="display: flex; align-items: center; gap: 20px;">

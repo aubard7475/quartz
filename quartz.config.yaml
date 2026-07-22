@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Notes
-  pageTitleSuffix: ""
+  pageTitle: Cookie's Notes
+  pageTitleSuffix: " Cookie's Notes"
   enableSPA: true
   enablePopovers: true
   analytics:
@@ -186,7 +186,7 @@ plugins:
       position: beforeBody
       priority: 30
   - source: github:quartz-community/page-title
-    enabled: false
+    enabled: true
     layout:
       position: left
       priority: 10
