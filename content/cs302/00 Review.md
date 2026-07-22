@@ -1,4 +1,8 @@
-# CS 202 Review
+---
+title: CS 202 Review
+order: 0
+---
+
 A "longer than i originally expected it to be" summary of the informatin from my CS 202 notes.
 
 (Note: ctrl+k then v to open preview for md with my extention)
