@@ -218,7 +218,7 @@ plugins:
         GitHub: https://github.com/jackyzha0/quartz
         Discord Community: https://discord.gg/cRFFHYye7t
   - source: github:quartz-community/recent-notes
-    enabled: true
+    enabled: false
   - source: github:quartz-community/spacer
     enabled: true
     options: {}
