@@ -1,5 +1,5 @@
 ---
-title: CS 202 Review
+title: Prior Knowledge
 order: 0
 ---
 
