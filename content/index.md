@@ -1,6 +1,5 @@
 ---
-title: Welcome to Quartz
+title: REAME
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+test page
