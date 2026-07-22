@@ -72,6 +72,9 @@ ExternalPlugin.Explorer({
       sensitivity: "base",
     })
   },
+  filterFn: (node) => {
+    return !node.slug.startsWith("images")
+  },
 })
 
 const config = await loadQuartzConfig()
