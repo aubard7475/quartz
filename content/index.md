@@ -5,7 +5,7 @@ title: " "
 <div style="display: flex; align-items: center; gap: 20px;">
 
 <div>
-<img src="/images/leaf.png" width="256">
+<img src="/images/Spoilers.gif" style="width: 50%; max-width: 256;">
 </div>
 
 <div style="flex: 1; text-align: left;">
