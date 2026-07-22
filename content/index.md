@@ -9,13 +9,11 @@ title: " "
 </div>
 
 <div style="flex: 1; text-align: left;">
-
 Hi.
 
 I don't know what else to put here.
 
 Theres buttons on the left, you should click on them maybe.
-
 </div>
 
 </div>
