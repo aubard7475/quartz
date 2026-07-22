@@ -16,7 +16,7 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Lexend
+      header: IBM Plex Mono
       body: Lexend
       code: IBM Plex Mono
     colors:
