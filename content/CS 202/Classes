@@ -1,0 +1,77 @@
+---
+title: Classes
+order: 3
+---
+
+Classes are objects that contain their own variables and functions.
+Classes are private by default, unlike structs which default to public.
+Creating a class:
+```cpp
+class Student{
+private:
+// Member variables
+    string name;
+    int score;
+    char grade;
+public: 
+// Member functions
+    // Default constructor
+    Student(); 
+    // Parameterized constructor
+    Student(string name, int score);
+    //Mutator/Setter functions
+    void setStudentData();
+    void setStudentData(string name, int score);
+    //Accessor/Getter functions
+    string getName() const;
+    int getScore() const;
+    // Other functions
+    void calculateGrade();
+    void printData();
+    //Destructor function
+    ~Student(); 
+};
+```
+Default constructor:
+```cpp
+Student::Student(){
+    cout<<"Default Constructor Called"<<endl;
+    name = " ";
+    score = 0;
+    grade = ' ';
+}
+```
+Parameterized constructor:
+```cpp
+Student::Student(string name, int score){
+    cout<<"Parameterized Constructor Called"<<endl;
+    this->name=name;
+    this->score=score;
+}
+```
+Destructor:
+```cpp
+Student::~Student(){
+    cout<<"Destructor Called for "<<getName()<<endl;
+}
+```
+
+# Inheritance
+"Is-a" relationship between classes.
+Inheritance is when you have a class that inherits from another class.
+For example, a `Car` class might inherit from a `Vehicle` class.
+Consider you have a `Vehicle` Class:
+```cpp
+class Vehicle{ /* some code */ }
+```
+This is called a parent class.
+Then, you could have other classes for all the different vehicles you have:
+```cpp
+class Car:public Vehicle{ /* some code */ }
+class Plane:public Vehicle{ /* some code */ }
+class Bike:public Vehicle{ /* some code */ }
+```
+These are called child classes.
+This can be efficent because you would declare things such as `model` and `year` in the `Vehicle` class while having more specific information like `numOfWheels` and `wingspan` in the child classes.
+Child classes cannot access private members of the parent class.
+If you have the same function in the child and parent class, it will prioritize the child class.
