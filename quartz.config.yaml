@@ -21,15 +21,15 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#18110D"          # background (very dark warm brown)
-        lightgray: "#30241C"      # borders/cards
-        gray: "#6B5A4A"           # muted text
-        darkgray: "#D8C7B8"       # normal text
-        dark: "#F5E9DF"           # headings
-        secondary: "#ED7014"      # links/accent orange
-        tertiary: "#FF9A4D"       # lighter orange accent
-        highlight: rgba(237, 112, 20, 0.15)
-        textHighlight: "#ED701488"
+        light: "#161618"
+        lightgray: "#393639"
+        gray: "#646464"
+        darkgray: "#d4d4d4"
+        dark: "#ebebec"
+        secondary: "#7b97aa"
+        tertiary: "#84a59d"
+        highlight: rgba(143, 159, 169, 0.15)
+        textHighlight: "#b3aa0288"
       darkMode:
         light: "#18110D"          # background (very dark warm brown)
         lightgray: "#30241C"      # borders/cards
@@ -139,7 +139,7 @@ plugins:
   - source: github:quartz-community/content-page
     enabled: true
   - source: github:quartz-community/folder-page
-    enabled: false
+    enabled: true
   - source: github:quartz-community/tag-page
     enabled: true
   - source: github:quartz-community/explorer
