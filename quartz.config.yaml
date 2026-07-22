@@ -21,15 +21,15 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        light: "#18110D"          # background (very dark warm brown)
+        lightgray: "#30241C"      # borders/cards
+        gray: "#6B5A4A"           # muted text
+        darkgray: "#D8C7B8"       # normal text
+        dark: "#F5E9DF"           # headings
+        secondary: "#ED7014"      # links/accent orange
+        tertiary: "#FF9A4D"       # lighter orange accent
+        highlight: rgba(237, 112, 20, 0.15)
+        textHighlight: "#ED701488"
       darkMode:
         light: "#18110D"          # background (very dark warm brown)
         lightgray: "#30241C"      # borders/cards
@@ -90,7 +90,7 @@ plugins:
     enabled: false
     order: 85
   - source: github:quartz-community/hard-line-breaks
-    enabled: false
+    enabled: true
     order: 90
   - source: github:quartz-community/ox-hugo
     enabled: false
@@ -139,7 +139,7 @@ plugins:
   - source: github:quartz-community/content-page
     enabled: true
   - source: github:quartz-community/folder-page
-    enabled: true
+    enabled: false
   - source: github:quartz-community/tag-page
     enabled: true
   - source: github:quartz-community/explorer
@@ -186,13 +186,13 @@ plugins:
       position: left
       priority: 10
   - source: github:quartz-community/darkmode
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 30
       group: toolbar
   - source: github:quartz-community/reader-mode
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 35
@@ -218,7 +218,7 @@ plugins:
         GitHub: https://github.com/jackyzha0/quartz
         Discord Community: https://discord.gg/cRFFHYye7t
   - source: github:quartz-community/recent-notes
-    enabled: false
+    enabled: true
   - source: github:quartz-community/spacer
     enabled: true
     options: {}
