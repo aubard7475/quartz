@@ -1,6 +1,7 @@
 ---
 title: Pointers
 order: 5
+tags: ["50"]
 ---
 
 Recall that an `int` stores a number.

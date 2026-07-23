@@ -1,6 +1,7 @@
 ---
 title: Classes
 order: 3
+tags: ["30"]
 ---
 
 Classes are objects that contain their own variables and functions.

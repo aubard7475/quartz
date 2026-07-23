@@ -1,6 +1,7 @@
 ---
 title: Virtual Functions
 order: 7
+tags: ["100"]
 ---
 
 Converts function to be run-time instead of compile-time.

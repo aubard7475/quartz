@@ -3,7 +3,7 @@ configuration:
   pageTitle: "Cookie's Notes"
   pageTitleSuffix: " Cookie's Notes"
   enableSPA: true
-  enablePopovers: false
+  enablePopovers: true
   analytics:
     provider: plausible
   locale: en-US
@@ -68,7 +68,7 @@ plugins:
     enabled: true
     order: 40
   - source: github:quartz-community/table-of-contents
-    enabled: false
+    enabled: true
     order: 60
     layout:
       position: right
@@ -241,8 +241,6 @@ plugins:
       includeAll: false
       includedProperties:
         - description
-        - tags
-        - aliases
       excludedProperties: []
       hidePropertiesView: false
       delimiters: ---

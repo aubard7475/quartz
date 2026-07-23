@@ -61,11 +61,24 @@ import * as ExternalPlugin from "./.quartz/plugins"
 
 ExternalPlugin.Explorer({
   sortFn: (a, b) => {
+    // folders first
     if (a.isFolder && !b.isFolder) return -1
     if (!a.isFolder && b.isFolder) return 1
 
-    const nameA = a.slugSegment ?? a.displayName
-    const nameB = b.slugSegment ?? b.displayName
+    // use first tag as custom order
+    const orderA = Number(a.data?.tags?.[0])
+    const orderB = Number(b.data?.tags?.[0])
+
+    if (!isNaN(orderA) && !isNaN(orderB)) {
+      return orderA - orderB
+    }
+
+    if (!isNaN(orderA)) return -1
+    if (!isNaN(orderB)) return 1
+
+    // fallback: alphabetical
+    const nameA = a.data?.title ?? a.displayName
+    const nameB = b.data?.title ?? b.displayName
 
     return nameA.localeCompare(nameB, undefined, {
       numeric: true,
@@ -73,7 +86,10 @@ ExternalPlugin.Explorer({
     })
   },
   filterFn: (node) => {
-    return !node.slug.startsWith("images")
+    return (
+      !node.slug.startsWith("images") &&
+      !node.slug.startsWith("dictionary")
+    )
   },
 })
 

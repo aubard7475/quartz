@@ -1,6 +1,7 @@
 ---
 title: Copying
 order: 6
+tags: ["60"]
 ---
 
 Shallow copying copies addresses, not values:
