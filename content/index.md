@@ -7,13 +7,11 @@ title: " "
   <img src="/images/leaf.png" class="home-image">
 
   <div class="home-text">
-    <p>Hi.</p>
-    <p>
-      I don't know what else to put here.
-    </p>
-    <p>
-      There's buttons on the left, you should click on them maybe.
-    </p>
+  Hi.
+
+  I don't know what else to put here.
+
+  There's buttons on the left, you should click on them maybe.
   </div>
 
 </div>

@@ -1,3 +1,68 @@
 @use "./variables.scss" as *;
-
 // put your custom CSS here!
+
+// .right {
+//   &::before {
+//     content: "";
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     background-image: url("/images/lohen.jpg");
+//     background-size: cover;
+//     background-position: center;
+//   }
+// }
+
+.left {
+  &::before {
+    content: "";
+    display: block;
+    width: 75%;
+    aspect-ratio: 1; /* replace with your image's actual width/height ratio */
+    background-image: url("/images/kazu.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+}
+
+// .right {
+//   &::before {
+//     content: "";
+//     display: block;
+//     width: 100%;
+//     height: 100%; /* total height for the whole stack */
+//     background-image:
+//       url("/images/kazu.png"),
+//       url("/images/kazu2.png");
+//     background-size: 100% 33.33%, 100% 33.33%, 100% 33.33%;
+//     background-position: top, bottom;
+//     background-repeat: no-repeat, no-repeat, no-repeat;
+//   }
+// }
+
+.explorer .explorer-toggle {
+  pointer-events: none;
+  padding: 0;
+  min-height: 0;
+}
+
+.explorer .explorer-toggle h2 {
+  font-size: 0;
+}
+
+.explorer .explorer-toggle .fold {
+  display: none;
+}
+
+.left.sidebar {
+  gap: 0rem;
+}
+
+// .page-title {
+//   font-family: "Pixelify Sans", sans-serif !important;
+//   font-optical-sizing: auto;
+//   font-weight: 400;
+//   font-style: normal;
+// }

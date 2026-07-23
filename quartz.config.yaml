@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Cookie's Notes
+  pageTitle: "Cookie's Notes"
   pageTitleSuffix: " Cookie's Notes"
   enableSPA: true
   enablePopovers: false
@@ -71,7 +71,7 @@ plugins:
     enabled: false
     order: 60
     layout:
-      position: left
+      position: right
       priority: 40
   - source: github:quartz-community/crawl-links
     enabled: true
