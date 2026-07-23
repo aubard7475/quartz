@@ -28,7 +28,7 @@ title: " "
   </div>
   
 </div>
-  <img src="https://aubard7475.github.io/quartz/content/images/leaf.jpg" class="home-image">
+  <img src="https://aubard7475.github.io/quartz/images/leaf.jpg" class="home-image">
 </div>
 
 
