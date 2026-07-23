@@ -1,4 +1,5 @@
 @use "./variables.scss" as *;
+
 // put your custom CSS here!
 
 // .right {
@@ -18,8 +19,8 @@
     content: "";
     display: block;
     width: 75%;
-    aspect-ratio: 1; /* replace with your image's actual width/height ratio */
-    background-image: url("/images/kazu.png");
+    aspect-ratio: 1;
+    background-image: url("https://aubard7475.github.io/quartz/images/kazu.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
