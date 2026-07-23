@@ -123,7 +123,7 @@ plugins:
       display: all
   - source: github:quartz-community/alias-redirects
     enabled: true
-  - source: github:quartz-community/content-index
+  - source: github:aubard7475/content-index 
     enabled: true
     options:
       enableSiteMap: true
@@ -220,7 +220,7 @@ plugins:
     enabled: true
     options:
       links:
-        "Is everything in these notes accurate?": "https://aubard7475.github.io/quartz/images/idk.jpg"
+        "Is everything on this page accurate?": "https://aubard7475.github.io/quartz/images/idk.jpg"
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer

@@ -56,12 +56,53 @@
 // export default config
 // export const layout = await loadQuartzLayout()
 
+// import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
+// import * as ExternalPlugin from "./.quartz/plugins"
+
+// ExternalPlugin.Explorer({
+//   sortFn: (a, b) => {
+//     if (a.isFolder && !b.isFolder) return -1
+//     if (!a.isFolder && b.isFolder) return 1
+
+//     const nameA = a.slugSegment ?? a.displayName
+//     const nameB = b.slugSegment ?? b.displayName
+
+//     return nameA.localeCompare(nameB, undefined, {
+//       numeric: true,
+//       sensitivity: "base",
+//     })
+//   },
+//   filterFn: (node) => {
+//     return !node.slug.startsWith("images")
+//   },
+// })
+
+// const config = await loadQuartzConfig()
+// export default config
+// export const layout = await loadQuartzLayout()
+
+
 import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
 import * as ExternalPlugin from "./.quartz/plugins"
 
 ExternalPlugin.Explorer({
   sortFn: (a, b) => {
+<<<<<<< Updated upstream
     // folders first
+=======
+    const orderA = a.data?.order as number | undefined
+    const orderB = b.data?.order as number | undefined
+
+    // both have an explicit order -> sort numerically by that
+    if (orderA !== undefined && orderB !== undefined) {
+      return orderA - orderB
+    }
+    // only one has an explicit order -> it goes first
+    if (orderA !== undefined) return -1
+    if (orderB !== undefined) return 1
+
+    // fallback: folders first, then alphabetical (your original behavior)
+>>>>>>> Stashed changes
     if (a.isFolder && !b.isFolder) return -1
     if (!a.isFolder && b.isFolder) return 1
 

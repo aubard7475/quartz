@@ -55,12 +55,6 @@
       "commit": "42c5023e42cf62495219095a862b2ea144b65600",
       "installedAt": "2026-07-22T04:10:07.297Z"
     },
-    "content-index": {
-      "source": "github:quartz-community/content-index",
-      "resolved": "https://github.com/quartz-community/content-index.git",
-      "commit": "c3d4f5c85311712c3355cd71da46b28e2d8eba71",
-      "installedAt": "2026-07-22T04:10:05.460Z"
-    },
     "content-meta": {
       "source": "github:quartz-community/content-meta",
       "resolved": "https://github.com/quartz-community/content-meta.git",

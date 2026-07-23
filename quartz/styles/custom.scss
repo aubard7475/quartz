@@ -156,7 +156,7 @@ body::after {
 // LEFT HALF — grid drifts rightward
 body::before {
   left: 0;
-  animation: drift-right 20s linear infinite;
+  animation: drift-right 5s linear infinite;
 
   mask-image: linear-gradient(
     90deg,
@@ -175,7 +175,7 @@ body::before {
 // RIGHT HALF — grid drifts leftward
 body::after {
   right: 0;
-  animation: drift-left 20s linear infinite;
+  animation: drift-left 5s linear infinite;
 
   mask-image: linear-gradient(
     90deg,
