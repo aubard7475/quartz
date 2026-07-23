@@ -37,7 +37,10 @@ title: " "
   gap: 10%;
 }
 .home-image {
-  width: 25%;
+  width: 300px;
+  height: 300px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 50%;
 }
 </style>
@@ -45,4 +48,15 @@ title: " "
 
 
 
+<br><br><br>
+<div style="text-align: center; font-size: 1.5em; text-decoration: underline;">
+  Resources
+</div>
+<div style="text-align: center;">
 
+[[x86registers|x86 Registers]]
+
+[[x86commands|x86 Commands]]
+
+[[02_MIPS| MIPS Registers & Commands]]
+</div>
