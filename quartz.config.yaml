@@ -220,7 +220,7 @@ plugins:
     enabled: true
     options:
       links:
-        "Is everything on this page accurate?": "https://aubard7475.github.io/quartz/images/idk.jpg"
+        "Is everything on this page accurate?": "https://aubard7475.github.io/quartz/images/answer.jpg"
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
