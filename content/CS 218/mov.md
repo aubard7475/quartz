@@ -1,5 +1,5 @@
 ---
-title: mov
+title: Move
 tags: 40
 ---
 Consider the following code:
