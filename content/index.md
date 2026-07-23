@@ -1,12 +1,6 @@
 ---
 title: " "
 ---
-
-
-
-
-
-
 <div class="home-header">
 <div style="
   display: flex;
@@ -17,7 +11,6 @@ title: " "
   padding: 20px;
 ">
   <div style="text-align: left;">
-
 > Hi.
 > 
 > I don't know what else to type here.
@@ -34,18 +27,6 @@ title: " "
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <style>
 .home-header {
   display: flex;
@@ -53,17 +34,11 @@ title: " "
   justify-content: center;
   text-align: center;
   gap: 10%;
-  
 }
-
-
-
 .home-image {
   width: 25%;
   border-radius: 50%;
 }
-
-
 </style>
 
 

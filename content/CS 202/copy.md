@@ -1,7 +1,8 @@
 ---
 title: Copying
-order: 6
 tags: ["60"]
+aliases:
+- deep copies
 ---
 
 Shallow copying copies addresses, not values:

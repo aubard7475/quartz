@@ -301,3 +301,6 @@ body::after {
 //   }
 // }
 
+code:not(pre code) {
+  background-color: transparent;
+}
