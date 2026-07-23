@@ -87,22 +87,7 @@ import * as ExternalPlugin from "./.quartz/plugins"
 
 ExternalPlugin.Explorer({
   sortFn: (a, b) => {
-<<<<<<< Updated upstream
     // folders first
-=======
-    const orderA = a.data?.order as number | undefined
-    const orderB = b.data?.order as number | undefined
-
-    // both have an explicit order -> sort numerically by that
-    if (orderA !== undefined && orderB !== undefined) {
-      return orderA - orderB
-    }
-    // only one has an explicit order -> it goes first
-    if (orderA !== undefined) return -1
-    if (orderB !== undefined) return 1
-
-    // fallback: folders first, then alphabetical (your original behavior)
->>>>>>> Stashed changes
     if (a.isFolder && !b.isFolder) return -1
     if (!a.isFolder && b.isFolder) return 1
 
