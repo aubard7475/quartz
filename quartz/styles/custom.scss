@@ -67,3 +67,229 @@
 //   font-weight: 400;
 //   font-style: normal;
 // }
+
+// body {
+//   background: linear-gradient(90deg, #ED7014 0%, #161618 20%, #161618 80%, #ED7014 100%);
+//   background-attachment: fixed;
+// }
+
+// body {
+//   background:
+//     radial-gradient(circle at 15% 25%, #ED7014, transparent 30%),
+//     #161618;
+//   background-attachment: fixed;
+// }
+
+
+// .right {
+//   background-color: #ED7014; // original color, isolated back
+// }
+
+
+// $grid-fade-start: 25%; // where the fade-out begins from each edge
+// $grid-fade-end: 75%;   // where the fade-in begins toward the opposite edge
+
+// body {
+//   background-color: #161618;
+//   position: relative;
+// }
+
+// body::before {
+//   content: "";
+//   position: fixed; // was: fixed
+//   inset: 0;
+//   background-image:
+//     linear-gradient(rgba(237, 112, 20, 0.1) 1px, transparent 1px),
+//     linear-gradient(90deg, rgba(237, 112, 20, 0.1) 1px, transparent 1px);
+//   background-size: 30px 30px;
+
+//   mask-image: linear-gradient(
+//     90deg,
+//     black 0%,
+//     transparent $grid-fade-start,
+//     transparent $grid-fade-end,
+//     black 100%
+//   );
+//   -webkit-mask-image: linear-gradient(
+//     90deg,
+//     black 0%,
+//     transparent $grid-fade-start,
+//     transparent $grid-fade-end,
+//     black 100%
+//   );
+
+//   pointer-events: none;
+//   z-index: -1;
+// }
+
+// @keyframes drift {
+//   to { background-position: 0px 30px; }
+// }
+// body::before {
+//   animation: drift 3s linear infinite;
+// }
+
+$grid-fade-start: 50%; // where the fade-out begins from each edge
+$grid-fade-end: 100%;   // where the fade-in begins toward the opposite edge
+
+body {
+  background-color: #161618;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-image:
+    linear-gradient(rgba(237, 112, 20, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(237, 112, 20, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+// LEFT HALF — grid drifts rightward
+body::before {
+  left: 0;
+  animation: drift-right 20s linear infinite;
+
+  mask-image: linear-gradient(
+    90deg,
+    black 0%,
+    transparent $grid-fade-start,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    black 0%,
+    transparent $grid-fade-start,
+    transparent 100%
+  );
+}
+
+// RIGHT HALF — grid drifts leftward
+body::after {
+  right: 0;
+  animation: drift-left 20s linear infinite;
+
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    transparent $grid-fade-end - 50%,
+    black 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    transparent $grid-fade-end - 50%,
+    black 100%
+  );
+}
+
+@keyframes drift-right {
+  from { background-position: 0 0; }
+  to   { background-position: 30px 0; }
+}
+
+@keyframes drift-left {
+  from { background-position: 0 0; }
+  to   { background-position: -30px 0; }
+}
+
+@keyframes drift-right {
+  from { background-position: 0 0; }
+  to   { background-position: 30px 0; }
+}
+
+// blurry one
+// $grid-fade-start: 50%; // where the fade-out begins from each edge
+// $grid-fade-end: 100%;   // where the fade-in begins toward the opposite edge
+
+// body {
+//   background-color: #161618;
+//   position: relative;
+//   min-height: 100vh;
+// }
+
+// body::before,
+// body::after {
+//   content: "";
+//   position: fixed;
+//   top: -10px;
+//   bottom: -10px;
+//   width: calc(50% + 10px);
+//   background-image:
+//     linear-gradient(rgba(237, 112, 20, 0.1) 1px, transparent 1px),
+//     linear-gradient(90deg, rgba(237, 112, 20, 0.1) 1px, transparent 1px);
+//   background-size: 30px 30px;
+//   filter: blur(1.5px);
+//   pointer-events: none;
+//   z-index: -1;
+// }
+
+// // LEFT HALF — grid drifts rightward
+// body::before {
+//   left: -10px;
+//   animation: drift-right 20s linear infinite;
+
+//   mask-image: linear-gradient(
+//     90deg,
+//     black 0%,
+//     transparent $grid-fade-start,
+//     transparent 100%
+//   );
+//   -webkit-mask-image: linear-gradient(
+//     90deg,
+//     black 0%,
+//     transparent $grid-fade-start,
+//     transparent 100%
+//   );
+// }
+
+// // RIGHT HALF — grid drifts leftward
+// body::after {
+//   right: -10px;
+//   animation: drift-left 20s linear infinite;
+
+//   mask-image: linear-gradient(
+//     90deg,
+//     transparent 0%,
+//     transparent $grid-fade-end - 50%,
+//     black 100%
+//   );
+//   -webkit-mask-image: linear-gradient(
+//     90deg,
+//     transparent 0%,
+//     transparent $grid-fade-end - 50%,
+//     black 100%
+//   );
+// }
+
+// @keyframes drift-right {
+//   from { background-position: 0 0; }
+//   to   { background-position: 30px 0; }
+// }
+
+// @keyframes drift-left {
+//   from { background-position: 0 0; }
+//   to   { background-position: -30px 0; }
+// }
+
+.left.sidebar {
+  text-align: center;
+}
+
+.left.sidebar .search {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left.sidebar .explorer {
+  text-align: left;
+}
+

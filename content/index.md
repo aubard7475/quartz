@@ -2,6 +2,11 @@
 title: " "
 ---
 
+
+
+
+
+
 <div class="home-header">
 
   <img src="/images/leaf.png" class="home-image">
@@ -15,6 +20,9 @@ title: " "
   </div>
 
 </div>
+
+
+
 
 <style>
 .home-header {
@@ -48,3 +56,43 @@ title: " "
   }
 }
 </style>
+<!-- 
+<div class="bar">
+  <div id="progress"></div>
+</div>
+
+<p id="text"></p>
+
+<style>
+.bar {
+  width: 300px;
+  height: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#progress {
+  height: 100%;
+  width: 0%;
+  background: gray;
+  transition: width 1s;
+}
+</style>
+
+<script>
+const start = new Date("2026-05-15");
+const end = new Date("2026-08-24");
+const today = new Date();
+
+const total = end - start;
+const elapsed = today - start;
+
+const percent = Math.min(Math.max((elapsed / total) * 100, 0), 100);
+
+document.getElementById("progress").style.width = percent + "%";
+document.getElementById("text").textContent =
+  Math.floor(percent) + "% of summer complete";
+</script>
+
+ -->
