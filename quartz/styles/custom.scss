@@ -61,6 +61,20 @@
   gap: 0rem;
 }
 
+// .toc .toc-header {
+//   pointer-events: none;
+//   padding: 0;
+//   min-height: 0;
+// }
+
+// .toc .toc-header h3 {
+//   font-size: 0;
+// }
+
+// .toc .fold {
+//   display: none;
+// }
+
 // .page-title {
 //   font-family: "Pixelify Sans", sans-serif !important;
 //   font-optical-sizing: auto;
@@ -301,7 +315,42 @@ body::after {
 //   }
 // }
 
+// code:not(pre code) {
+//   background-color: transparent;
+// }
+
 code:not(pre code) {
   background-color: transparent;
+  color: #ED7014;
+  border-radius: 6px;
+  padding: 2px 6px;
 }
 
+// this deals with the page preview popover things
+a.internal {
+  color: #ebebec;
+  text-decoration: none;
+  font-weight: none;
+}
+
+a.internal:hover {
+  text-decoration: underline;
+  color: #ED7014;
+}
+
+.tags {
+  display: none;
+}
+
+.page-listing > p {
+  font-size: 0;
+}
+
+.page-listing > p::after {
+  content: "This page has no content.";
+  font-size: 1rem;
+}
+
+.page-listing .desc {
+  display: none;
+}

@@ -21,15 +21,15 @@ configuration:
       code: "JetBrains Mono"
     colors:
       lightMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#ED7014"
-        tertiary: "#ED7014"
-        highlight: "#ED701426"
-        textHighlight: "#b3aa0288"
+        light: "#161618"           # Main light background
+        lightgray: "#393639"       # Slightly lighter background / borders
+        gray: "#646464"            # Neutral gray text / secondary elements
+        darkgray: "#d4d4d4"        # Secondary text color
+        dark: "#ebebec"            # Main text color
+        secondary: "#ED7014"       # Accent color (orange) / links
+        tertiary: "#ED7014"        # Secondary accent / hover states
+        highlight: "#ED701426"     # Highlight background (orange with transparency)
+        textHighlight: "#b3aa0288" # Text selection highlight color
       darkMode:
         light: "#161618"
         lightgray: "#393639"
@@ -200,7 +200,7 @@ plugins:
     enabled: false
     layout:
       position: left
-      priority: 35
+      priority: 100
       group: toolbar
   - source: github:quartz-community/breadcrumbs
     enabled: true

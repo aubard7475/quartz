@@ -1,6 +1,6 @@
 ---
 title: MIPS
-tags: 30
+tags: 0
 ---
 Saved:
 - $s0 -\> $s7

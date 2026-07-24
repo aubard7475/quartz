@@ -28,6 +28,7 @@ title: " "
 
 
 
+
 <style>
 .home-header {
   display: flex;
@@ -45,12 +46,10 @@ title: " "
 }
 </style>
 
+<br>
 
-
-
-<br><br><br>
 <div style="text-align: center; font-size: 1.5em; text-decoration: underline;">
-  Resources
+Reference Pages
 </div>
 <div style="text-align: center;">
 
@@ -58,5 +57,12 @@ title: " "
 
 [[x86commands|x86 Commands]]
 
-[[02_MIPS| MIPS Registers & Commands]]
+[[mips| MIPS Registers & Commands]]
+</div>
+
+
+<br><br>
+<div style="text-align: center;">
+
+p.s. this site may look weird at some resolutions & aspect ratios, let me know if you have any issues <3
 </div>
