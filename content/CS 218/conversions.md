@@ -3,11 +3,11 @@ title: Conversions
 tags: 10
 ---
 
-Recall:
-- A number in decimal is represented with 0 through 9
-- A number in binary is represented with 0 and 1
+> [!abstract] Recall
+> A number in decimal is represented with `0` through `9`
+> A number in binary is represented with `0` and `1`
 
-A number in hexadecimal is represented with 0 through F where:
+A number in hexadecimal is represented with `0` through `F` where:
 |A |B |C |D |E |F |
 |- |- |- |- |- |- |
 |10|11|12|13|14|15|

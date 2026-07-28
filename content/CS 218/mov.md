@@ -19,6 +19,7 @@ section .data
     five  dd 56
     fiveW dw 56
     fiveQ dq 56
+    ; assume constants are defined
 section .bss
     ; empty
 section .text

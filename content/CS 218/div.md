@@ -5,13 +5,13 @@ tags: 70
 
 Works very simmilar to multiplcation, except for where the answer goes.
 
-Recall:
-```asm
-mov rax, 5
-mov r10, 5
-mul r10
-```
-The answer will be stored in `rax` and `rdx` (well, not really, cause its not large enough, but you get the idea)
+> [!abstract] Recall
+> ```asm
+> mov rax, 5
+> mov r10, 5
+> mul r10
+> ```
+> The answer will be stored in `rax` and `rdx` (well, not really, cause its not large enough, but you get the idea)
 
 Division is different because:
 `rax` holds the answer
