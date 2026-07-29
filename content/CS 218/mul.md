@@ -1,6 +1,6 @@
 ---
 title: Multiplication
-tags: 60
+order: 60
 ---
 
 Multiplication is weird because it only accepts one operand:

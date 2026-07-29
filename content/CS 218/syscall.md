@@ -1,6 +1,6 @@
 ---
 title: System Calls
-tags: 130
+order: 130
 ---
 
 System calls (or syscalls) are basic operations that your device's system does for you. This includes things such as reading/writing from a file and taking user input.

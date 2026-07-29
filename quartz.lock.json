@@ -55,6 +55,12 @@
       "commit": "42c5023e42cf62495219095a862b2ea144b65600",
       "installedAt": "2026-07-22T04:10:07.297Z"
     },
+    "content-index": {
+      "source": "github:aubard7475/content-index",
+      "resolved": "https://github.com/aubard7475/content-index.git",
+      "commit": "2cf7781458bec73a4834a75c7f0b47374a073928",
+      "installedAt": "2026-07-29T19:44:55.518Z"
+    },
     "content-meta": {
       "source": "github:quartz-community/content-meta",
       "resolved": "https://github.com/quartz-community/content-meta.git",

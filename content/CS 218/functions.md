@@ -1,6 +1,6 @@
 ---
 title: Functions
-tags: 120
+order: 120
 ---
 
 Written in `section .text`, outside of the `_start:` block.

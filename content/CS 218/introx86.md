@@ -1,6 +1,6 @@
 ---
 title: Intro to Registers
-tags: 20
+order: 20
 ---
 
 In x86, we cannot use our variables in order to perform operations.

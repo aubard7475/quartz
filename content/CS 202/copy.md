@@ -1,6 +1,6 @@
 ---
 title: Copying
-tags: ["60"]
+order: 6
 aliases:
 - deep copies
 ---

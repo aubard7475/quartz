@@ -1,7 +1,6 @@
 ---
 title: Static Functions & Variables
-order: 1
-tags: ["70"]
+order: 7
 ---
 
 Static functions only allow static [[variables]]

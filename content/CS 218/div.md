@@ -1,6 +1,6 @@
 ---
 title: Division
-tags: 70
+order: 70
 ---
 
 Works very simmilar to multiplcation, except for where the answer goes.

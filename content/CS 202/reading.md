@@ -1,6 +1,6 @@
 ---
 title: Reading From a File
-tags: ["20"]
+order: 2
 ---
 
 1. Include the `fstream` library.

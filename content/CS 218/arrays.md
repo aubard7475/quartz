@@ -1,6 +1,6 @@
 ---
 title: Arrays
-tags: 90
+order: 90
 ---
 
 Creating an array is simmilar to normal variables, however you just add more values with commas.

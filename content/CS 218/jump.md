@@ -1,6 +1,6 @@
 ---
 title: Jumps
-tags: 80
+order: 80
 ---
 
 In C++, we often use boolean statements in things such `if` statements and loops.

@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: "Cookie's Notes"
+  pageTitle: Cookie's Notes
   pageTitleSuffix: " Cookie's Notes"
   enableSPA: true
   enablePopovers: true
@@ -16,20 +16,20 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: "Lexend"
-      body: "Lexend"
-      code: "JetBrains Mono"
+      header: Lexend
+      body: Lexend
+      code: JetBrains Mono
     colors:
       lightMode:
-        light: "#161618"           # Main light background
-        lightgray: "#393639"       # Slightly lighter background / borders
-        gray: "#646464"            # Neutral gray text / secondary elements
-        darkgray: "#d4d4d4"        # Secondary text color
-        dark: "#ebebec"            # Main text color
-        secondary: "#ED7014"       # Accent color (orange) / links
-        tertiary: "#ED7014"        # Secondary accent / hover states
-        highlight: "#ED701426"     # Highlight background (orange with transparency)
-        textHighlight: "#b3aa0288" # Text selection highlight color
+        light: "#161618"
+        lightgray: "#393639"
+        gray: "#646464"
+        darkgray: "#d4d4d4"
+        dark: "#ebebec"
+        secondary: "#ED7014"
+        tertiary: "#ED7014"
+        highlight: "#ED701426"
+        textHighlight: "#b3aa0288"
       darkMode:
         light: "#161618"
         lightgray: "#393639"
@@ -123,11 +123,6 @@ plugins:
       display: all
   - source: github:quartz-community/alias-redirects
     enabled: true
-  - source: github:aubard7475/content-index 
-    enabled: true
-    options:
-      enableSiteMap: true
-      enableRSS: true
   - source: github:quartz-community/favicon
     enabled: true
   - source: github:quartz-community/og-image
@@ -141,13 +136,13 @@ plugins:
   - source: github:quartz-community/folder-page
     enabled: true
   - source: github:quartz-community/tag-page
-    enabled: false
+    enabled: true
   - source: github:quartz-community/explorer
     enabled: true
     options:
       title: Explorer
-      folderClickBehavior: collapse # "link" to navigate or "collapse" to toggle
-      folderDefaultState: collapsed # "collapsed" or "open"
+      folderClickBehavior: collapse
+      folderDefaultState: collapsed
       useSavedState: false
     layout:
       position: left
@@ -181,7 +176,7 @@ plugins:
       position: beforeBody
       priority: 20
   - source: github:quartz-community/tag-list
-    enabled: false
+    enabled: true
     layout:
       position: beforeBody
       priority: 30
@@ -189,7 +184,7 @@ plugins:
     enabled: true
     layout:
       position: left
-      priority: 10
+      priority: 30
   - source: github:quartz-community/darkmode
     enabled: false
     layout:
@@ -220,7 +215,7 @@ plugins:
     enabled: true
     options:
       links:
-        "Is everything on this page accurate?": "https://aubard7475.github.io/quartz/images/answer.jpg"
+        Is everything on this page accurate?: https://aubard7475.github.io/quartz/images/answer.jpg
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
@@ -250,6 +245,16 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
+  - source: github:aubard7475/content-index
+    enabled: true
+    options:
+      enableSiteMap: true
+      enableRSS: true
+      rssLimit: 10
+      rssFullHtml: false
+      rssSlug: index
+      includeEmptyFiles: true
+    order: 50
 layout:
   groups:
     toolbar:

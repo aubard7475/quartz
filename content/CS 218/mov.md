@@ -1,6 +1,6 @@
 ---
 title: Move
-tags: 40
+order: 40
 ---
 Consider the following code:
 ```cpp

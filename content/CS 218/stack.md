@@ -1,6 +1,6 @@
 ---
 title: Stack & Heap
-tags: 100
+order: 100
 ---
 
 The stack grows downward.

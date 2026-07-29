@@ -1,6 +1,6 @@
 ---
 title: Addition & Subtraction
-tags: 50
+order: 50
 ---
 
 Adding and subtracting works almost the same as moving.

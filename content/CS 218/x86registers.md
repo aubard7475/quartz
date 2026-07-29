@@ -1,9 +1,9 @@
 ---
 title: x86 Registers
-tags: 0
 aliases:
 - register
 - registers
+unlisted: true
 ---
 | Function Usage | 64-bit (Qword) | 32-bit (Dword) | 16-bit (Word) | 8-bit (Byte) |
 | -------------- | -------------- | -------------- | ------------- | ------------ |

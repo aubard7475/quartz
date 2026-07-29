@@ -1,6 +1,6 @@
 ---
 title: Program Organization
-tags: 30
+order: 30
 ---
 
 There are three parts to an x86 program.

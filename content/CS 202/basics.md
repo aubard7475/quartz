@@ -1,6 +1,6 @@
 ---
 title: Basics
-tags: ["10"]
+order: 1
 ---
 
 In order to create a C++ file, you need a few things.

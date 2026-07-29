@@ -1,7 +1,6 @@
 ---
 title: Templates
 order: 9
-tags: ["90"]
 ---
 
 Instead of having a bunch of functions like this:
