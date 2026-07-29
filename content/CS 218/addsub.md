@@ -9,7 +9,7 @@ Adding and subtracting works almost the same as moving.
 Reads from `<dest>` and `<src>` and writes the sum of the two to `<dest>`
 
 `sub <dest>, <src>`
-Reads from `<dest>` and `<src>` and writes `<dest>-<sub>` to `<dest>`
+Reads from `<dest>` and `<src>` and writes `<dest> - <sub>` to `<dest>`
 
 Example:
 ```asm

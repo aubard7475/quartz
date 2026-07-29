@@ -1,5 +1,5 @@
 ---
-title: Macros
+title: Functions
 tags: 120
 ---
 

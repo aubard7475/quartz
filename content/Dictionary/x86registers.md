@@ -27,4 +27,4 @@ aliases:
 
 > Turns out, making a table in markdown is pretty easy, although I *do* miss the colors...
 
-> [Here](https://aubard7475.github.io/quartz/images/registerImg.png) is the original version, which is probably easier to read.
+> [Here](https://aubard7475.github.io/quartz/images/registerimg.png) is the original version, which is probably easier to read.

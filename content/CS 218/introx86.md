@@ -3,8 +3,6 @@ title: Intro to Registers
 tags: 20
 ---
 
-This is not an all-inclusive intro to x86.
-
 In x86, we cannot use our variables in order to perform operations.
 Variables serve to read and write to, but not to do things such as addition and subtraction.
 
