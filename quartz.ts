@@ -15,18 +15,21 @@ ExternalPlugin.Explorer({
     if (a.isFolder && !b.isFolder) return -1
     if (!a.isFolder && b.isFolder) return 1
 
-    // use frontmatter order
-    const orderA = Number(a.data?.order)
-    const orderB = Number(b.data?.order)
+    const orderA = a.data?.order
+    const orderB = b.data?.order
 
-    if (!isNaN(orderA) && !isNaN(orderB)) {
-      return orderA - orderB
+    // both have order -> sort by order
+    if (orderA !== undefined && orderB !== undefined) {
+      return Number(orderA) - Number(orderB)
     }
 
-    if (!isNaN(orderA)) return -1
-    if (!isNaN(orderB)) return 1
+    // only A has order -> A first
+    if (orderA !== undefined) return -1
 
-    // fallback: alphabetical
+    // only B has order -> B first
+    if (orderB !== undefined) return 1
+
+    // no order -> alphabetical
     const nameA = a.data?.title ?? a.displayName
     const nameB = b.data?.title ?? b.displayName
 
@@ -35,13 +38,13 @@ ExternalPlugin.Explorer({
       sensitivity: "base",
     })
   },
+
   filterFn: (node) => {
     return (
       !node.slug.startsWith("images") &&
       !node.slug.startsWith("dictionary")
     )
   },
-  
 })
 
 const config = await loadQuartzConfig()
