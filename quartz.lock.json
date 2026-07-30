@@ -58,8 +58,8 @@
     "content-index": {
       "source": "github:aubard7475/content-index",
       "resolved": "https://github.com/aubard7475/content-index.git",
-      "commit": "2cf7781458bec73a4834a75c7f0b47374a073928",
-      "installedAt": "2026-07-29T19:44:55.518Z"
+      "commit": "c8bc5704036e8ac7335867e78d84131ab4c5dba8",
+      "installedAt": "2026-07-30T18:02:29.582Z"
     },
     "content-meta": {
       "source": "github:quartz-community/content-meta",
