@@ -41,7 +41,7 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: Install Quartz plugins
-        run: npx quartz plugin install
+        run: npx quartz plugin install -c 1 --verbose
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
