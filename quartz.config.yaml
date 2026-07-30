@@ -231,12 +231,11 @@ plugins:
     options: {}
     order: 50
   - source: github:quartz-community/note-properties
-    enabled: false
+    enabled: true
     options:
-      includeAll: true
+      includeAll: false
       includedProperties:
         - description
-        - order
       excludedProperties: []
       hidePropertiesView: false
       delimiters: ---
