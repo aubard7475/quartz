@@ -10,34 +10,43 @@ import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/conf
 import * as ExternalPlugin from "./.quartz/plugins"
 
 ExternalPlugin.Explorer({
-  sortFn: (a, b) => {
-    // folders first
-    if (a.isFolder && !b.isFolder) return -1
-    if (!a.isFolder && b.isFolder) return 1
+sortFn: (a, b) => {
+  const orderA = a.data?.order
+  const orderB = b.data?.order
 
-    const orderA = a.data?.order
-    const orderB = b.data?.order
+  // Negative-order files appear above folders
+  if (!a.isFolder && orderA !== undefined && Number(orderA) < 0) {
+    if (b.isFolder) return -1
+  }
 
-    // both have order -> sort by order
-    if (orderA !== undefined && orderB !== undefined) {
-      return Number(orderA) - Number(orderB)
-    }
+  if (!b.isFolder && orderB !== undefined && Number(orderB) < 0) {
+    if (a.isFolder) return 1
+  }
 
-    // only A has order -> A first
-    if (orderA !== undefined) return -1
+  // Folders first
+  if (a.isFolder && !b.isFolder) return -1
+  if (!a.isFolder && b.isFolder) return 1
 
-    // only B has order -> B first
-    if (orderB !== undefined) return 1
+  // both have order -> sort by order
+  if (orderA !== undefined && orderB !== undefined) {
+    return Number(orderA) - Number(orderB)
+  }
 
-    // no order -> alphabetical
-    const nameA = a.data?.title ?? a.displayName
-    const nameB = b.data?.title ?? b.displayName
+  // only A has order -> A first
+  if (orderA !== undefined) return -1
 
-    return nameA.localeCompare(nameB, undefined, {
-      numeric: true,
-      sensitivity: "base",
-    })
-  },
+  // only B has order -> B first
+  if (orderB !== undefined) return 1
+
+  // no order -> alphabetical
+  const nameA = a.data?.title ?? a.displayName
+  const nameB = b.data?.title ?? b.displayName
+
+  return nameA.localeCompare(nameB, undefined, {
+    numeric: true,
+    sensitivity: "base",
+  })
+},
 
   filterFn: (node) => {
     return (
