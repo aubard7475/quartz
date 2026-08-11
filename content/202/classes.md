@@ -10,7 +10,7 @@ Creating a class:
 class Student{
 private:
 // Member variables
-    string name;
+    string name; 
     int score;
     char grade;
 public: 

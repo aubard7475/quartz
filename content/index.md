@@ -1,7 +1,7 @@
 ---
 title: " "
 ---
-<div class="home-header">
+<!-- <div class="home-header">
 <div style="
   display: flex;
   justify-content: center;
@@ -65,4 +65,5 @@ Reference Pages
 <div style="text-align: center;">
 
 p.s. this site may look weird at some resolutions & aspect ratios, let me know if you have any issues <3
-</div>
+</div> -->
+
