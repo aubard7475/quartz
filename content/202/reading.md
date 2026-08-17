@@ -22,8 +22,7 @@ int main() {
     ifstream inFile;
     inFile.open("data.txt");
     // Varifies the file exists
-    if (!inFile.is_open())
-        return 0;
+    if (!inFile.is_open()) return 0;
     // Iterates through every line in the file
     string line;
     while (getline(inFile, line)){

@@ -3,9 +3,28 @@ title: Classes
 order: 3
 ---
 
-Classes are objects that contain their own variables and functions.
-Classes are private by default, unlike structs which default to public.
-Creating a class:
+In C++, Structs allow you to create your own data type that can have multiple other variables within it.
+
+Example of a struct:
+```cpp
+struct Person {
+    std::string name;
+    int age;
+    bool isMeta;
+};
+
+int main() {
+    Person bennett;
+    bennett.name = "Bennett";
+    bennett.age = 18;
+    bennett.isMeta = true;
+    std::cout << bennett.name << bennett.age << bennett.isMeta;
+}
+```
+
+Classes are like structs but are `private` by default, which means that external code cannot access its variables and functions.
+
+Example of a class:
 ```cpp
 class Student{
 private:
@@ -73,6 +92,7 @@ Student::~Student(){
 # Inheritance
 "Is-a" relationship between classes.
 Inheritance is when you have a class that inherits from another class.
+
 For example, a `Car` class might inherit from a `Vehicle` class.
 Consider you have a `Vehicle` Class:
 ```cpp
@@ -81,18 +101,21 @@ class Vehicle{ /* some code */ }
 This is called a parent class.
 Then, you could have other classes for all the different vehicles you have:
 ```cpp
-class Car:public Vehicle{ /* some code */ }
+class Car:public   Vehicle{ /* some code */ }
 class Plane:public Vehicle{ /* some code */ }
-class Bike:public Vehicle{ /* some code */ }
+class Bike:public  Vehicle{ /* some code */ }
 ```
 These are called child classes.
+
 This can be efficent because you would declare things such as `model` and `year` in the `Vehicle` class while having more specific information like `numOfWheels` and `wingspan` in the child classes.
 Child classes cannot access private members of the parent class.
+
 If you have the same function in the child and parent class, it will prioritize the child class.
 
 # Composition
 "Has-a" relationship between classes.
 Occurs when a class has a member variable that is itself another class.
+
 Consider you have a `Car` class:
 ```cpp
 class Car{ /* some code */ }

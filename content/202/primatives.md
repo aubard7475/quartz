@@ -1,8 +1,9 @@
 ---
-title: Primative types
+title: Variables
 aliases:
 - variable
 - variables
+order: 1
 ---
 | Type       |  Size | Declaration |
 | ---------- | ----- | ---------- |

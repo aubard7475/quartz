@@ -1,5 +1,5 @@
 ---
-title: Basics
+title: Creating a C++ File
 order: 1
 ---
 
@@ -26,16 +26,6 @@ Third, put your function definitions:
 ```cpp
 int main(){
     /* some code */
+    return 0;
 }
 ```
-
-Data sizes of variables:
-| Type       |  Size |
-| ---------- | ----: |
-| `bool`     |1 byte |
-| `char`     |1 byte |
-| `short`    |2 bytes|
-| `int`      |4 bytes|
-| `float`    |4 bytes|
-| `long long`|8 bytes|
-| `double`   |8 bytes|

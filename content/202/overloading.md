@@ -10,8 +10,10 @@ Types of operators:
 | Unary | ++, -–, !, +, - |
 | Arithmetic | +, -, *, /, % |
 | Logical | &&, \|\|, <<, >> |
+
 The 5 operators you cannot overload are:
-`.`, `.*`, `::`, `?:`, `sizeOf()`
+`.`    `.*`    `::`    `?:`    `sizeOf()`
+
 In function header:
 ```cpp
 void operator<operator_symbol>();

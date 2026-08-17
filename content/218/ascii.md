@@ -1,5 +1,6 @@
 ---
 title: ASCII table
+unlisted: true
 ---
 
 > This only includes the ones that will be important, you can google for an all-inclusive table.

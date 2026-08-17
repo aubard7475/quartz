@@ -3,7 +3,7 @@ title: Recursion
 order: 200
 ---
 
-Recursion is an alternative to [[iterative loops]].
+Recursion is an alternative to iterative loops.
 
 Direct recursion is when a function calls itself.
 Indirect recursion is when a function calls another recursive function.
