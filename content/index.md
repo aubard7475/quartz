@@ -67,3 +67,45 @@ Reference Pages
 p.s. this site may look weird at some resolutions & aspect ratios, let me know if you have any issues <3
 </div> -->
 
+<div id="image"></div>
+
+<script>
+    let data = [];
+
+    fetch("/characters.json?t=" + Date.now())
+        .then(response => response.json())
+        .then(file => {
+            data = file;
+            loadChar();
+        });
+
+    const results = document.getElementById("image");
+
+    function loadChar() {
+        const today = new Date("august 26");
+
+        const month = today.getMonth() + 1; // +1 because months start at 0 for some reaosn
+        const day = today.getDate();
+
+        const matches = data.filter(character => {
+            const date = character.birthdaymmdd; //gets the characters birthday
+            const parts = date.split("/");
+            const dateMonth = Number(parts[0]);
+            const dateDay = Number(parts[1]);
+            return month === dateMonth && day === dateDay;
+        });
+
+        const character = matches[0];
+
+        results.innerHTML = `<h2>Happy birthday ${character.name}</h2><img src="${character.images?.cover1 ?? character.images?.cover2 ?? character.images?.hoyowiki_icon ?? character.images?.mihoyo_icon}"><p>${character.birthday}</p>`;
+        
+    }
+</script>
+<style>
+    #image {
+        text-align: center;
+    }
+    #image img {
+        max-width: 50%;
+    }
+</style>
