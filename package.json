@@ -89,6 +89,7 @@
     "async-mutex": "^0.5.0",
     "chokidar": "^5.0.0",
     "esbuild-sass-plugin": "^3.6.0",
+    "genshin-db": "^5.2.12",
     "github-slugger": "^2.0.0",
     "globby": "^16.1.0",
     "hast-util-from-html": "^2.0.0",
