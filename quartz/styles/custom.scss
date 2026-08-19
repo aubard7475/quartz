@@ -17,7 +17,12 @@
     margin: 0 auto;
   }
 }
-
+// elemnts on the bottom above footer
+// .center {
+//   &::after {
+//     content:"";
+//   }
+// }
 // Disables rendering of the Explorer header
 .explorer .explorer-toggle {
   pointer-events: none;
@@ -36,6 +41,28 @@
 // Reduces distance between elements on the left sidebar
 .left.sidebar {
   gap: 0rem;
+}
+// hover effect on files in exploerer
+.explorer a {
+  transition: all 0.15s ease;
+}
+.explorer a:hover {
+  text-decoration: underline;
+  
+  font-size: 1.025em;
+}
+// folder button color
+.explorer .folder-title {
+  color: #ED7014;
+}
+
+.explorer .folder-title:hover {
+  color: #ff9a4a;
+}
+// currently open file
+.explorer .nav-file-title.active {
+    font-weight: bold;
+    font-size: 1.025em;
 }
 
 // Handles the background grid effect
