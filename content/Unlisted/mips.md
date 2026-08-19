@@ -1,5 +1,6 @@
 ---
 title: MIPS
+unlisted: true
 ---
 Saved:
 - $s0 -\> $s7

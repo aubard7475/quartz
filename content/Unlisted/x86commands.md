@@ -1,5 +1,6 @@
 ---
 title: x86 Commands
+unlisted: true
 ---
 
 # Commands

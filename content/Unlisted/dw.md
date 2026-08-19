@@ -13,7 +13,7 @@ unlisted: true
 <script>
     // cannot use normal read file so uses fetch
     let data = [];
-    fetch("/dandy.csv?t=" + Date.now())
+    fetch("dandy.csv?t=" + Date.now())
         .then(response => response.text())
         .then(file => {
             data = file.trim().split("\n").map(row => row.split(","));

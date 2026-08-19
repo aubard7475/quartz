@@ -51,7 +51,9 @@ sortFn: (a, b) => {
   filterFn: (node) => {
     return (
       !node.slug.startsWith("images") &&
-      !node.slug.startsWith("dictionary")
+      !node.slug.startsWith("dictionary") &&
+      !node.slug.startsWith("misc") &&
+      !node.slug.startsWith("unlisted")
     )
   },
 })

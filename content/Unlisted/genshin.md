@@ -13,7 +13,7 @@ unlisted: true
 <script>
     // cannot use normal read file so uses fetch
     let data = [];
-    fetch("/characters.json?t=" + Date.now())
+    fetch("characters.json?t=" + Date.now())
         .then(response => response.json())
         .then(file => {
             data = file;

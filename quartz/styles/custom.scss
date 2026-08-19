@@ -10,7 +10,7 @@
     display: block;
     width: 75%;
     aspect-ratio: 1;
-    background-image: url("https://aubard7475.github.io/quartz/images/kazu.png");
+    background-image: url("https://cookies-notes.pages.dev/images/kazu.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -190,4 +190,12 @@ a.internal:hover {
 //   content: "The following pages have this tag:";
 //   font-size: 1rem;
 // }
+
+
+
+// scroll bar go away
+::-webkit-scrollbar {
+  display: none;
+}
+
 
