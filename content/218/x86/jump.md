@@ -3,12 +3,13 @@ title: Jumps
 order: 80
 ---
 
-In C++, we often use boolean statements in things such `if` statements and loops.
+In C++, we often use boolean statements in things such as `if` statements and loops.
 
 In x86, there is no direct version of those. However, there is, of course, a differnt way.
 
-`cmp <op1> <op2>` compares both of its operands to be used when jumping. Alone, does nothing
-It must be followed by a jump command:
+`cmp <op1> <op2>` compares both of its operands to be used when jumping. 
+Alone, `cmp` does nothing, it must be followed by a jump command.
+
 Unconditional jump:
 ```asm
 jmp <dest>	; always jumps

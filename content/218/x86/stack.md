@@ -11,3 +11,5 @@ The heap grows upward.
 How to interact with the stack?
 `push <op64>` pushes `<op64>` on the stack.
 `pop <op64>` pops `<op64>` from the stack and puts the popped data in op64.
+
+This becomes important when dealing with functions.

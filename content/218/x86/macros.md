@@ -14,7 +14,8 @@ Tips: code the macro in main and then convert to macro
 
 Example of a macro:
 ```asm
-%macro addArray 4
+%macro addArray 4 
+	          ; ^ amount of parameters you want
 	mov rsi, 0
 	Mov rdi, 0
 	%%startLoop:

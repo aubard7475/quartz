@@ -45,7 +45,7 @@ global stats
 stats:
 	; prologue
 	push rbp		; Preserves stack pointer 
-	mov rbp, rsp	; Create new stack pointer
+	mov rbp, rsp		; Create new stack pointer
 	push r12		; Callee saved variable
 	push r13		; Callee saved variable
 	push r14		; Callee saved variable
@@ -59,6 +59,7 @@ stats:
 	pop r13		; Callee saved variables
 	pop r12		; Callee saved variables
 	pop rbp		; Preserves stack pointer 
+ret
 ```
 You do not need to push/pop registers you dont use.
 Also, make sure you pop in the reverse order that you push.

@@ -46,6 +46,7 @@ You must instead have a register in between:
 mov ax, word[alice]
 mov word[cyrene], ax
 ```
+The above code will move the value in `alice` to `ax`, and then move the value from `ax` to `cyrene`.
 
 # Pseudo-Casting
 You cannot move between 2 different data sizes.

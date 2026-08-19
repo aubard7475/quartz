@@ -4,7 +4,10 @@ order: 90
 ---
 
 Creating an array is simmilar to normal variables, however you just add more values with commas.
-In order to access an element in an array, use the formula: `[baseAddress + (index*size)]`
+In order to access an element in an array, use the formula: 
+```math
+[baseAddress + (index*size)]
+```
 The following code will iterate through an array of dwords:
 ```asm
 section .data

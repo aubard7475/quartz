@@ -7,11 +7,11 @@ Multiplication is weird because it only accepts one operand:
 `mul <src>` (unsigned)
 `imul <src>` (signed)
 
-This operand will then be multiplied by `rax` (or any lower-bit version), with the result being stores in the two special registers:
+This operand will then be multiplied by `rax` (or any lower-bit version), with the result being stored in the two special registers:
 `rax` (or any lower-bit version) will store the first half of the answer
 `rdx` (or any lower-bit version) will store the second half of the answer (if applicable)
 
-This is because multiplying two values together may exceed the limit of that data size, thus two registers are sometimes needed to store it.
+The second register is needed because multiplying two values together may exceed the limit of that data size, thus two registers are sometimes needed to store it.
 
 # Examples
 
