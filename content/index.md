@@ -82,7 +82,7 @@ p.s. this site may look weird at some resolutions & aspect ratios, let me know i
     const results = document.getElementById("image");
 
     function loadChar() {
-        const today = new Date("august 26");
+        const today = new Date();
 
         const month = today.getMonth() + 1; // +1 because months start at 0 for some reaosn
         const day = today.getDate();
