@@ -72,7 +72,7 @@ p.s. this site may look weird at some resolutions & aspect ratios, let me know i
 <script>
     let data = [];
 
-    fetch("/characters.json?t=" + Date.now())
+    fetch("characters.json?t=" + Date.now())
         .then(response => response.json())
         .then(file => {
             data = file;

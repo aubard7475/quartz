@@ -25,6 +25,5 @@ unlisted: true
 | Callee Saved | r15 | r15d | r15w | r15b |
 | Instruction Pointer | rip | - | - | - |
 
-> Turns out, making a table in markdown is pretty easy, although I *do* miss the colors...
 
-> [Here](https://aubard7475.github.io/quartz/images/registerimg.png) is the original version, which is probably easier to read.
+> [Here](https://cookies-notes.pages.dev/images/registerimg.png) is the original version, which is probably easier to read.
