@@ -15,7 +15,7 @@ The second register is needed because multiplying two values together may exceed
 
 # Examples
 
-> Caution: The following examples are unchecked and may be incorrect. Verify important info.
+> [!bug] The following examples are unchecked and may be wrong.
 
 Byte Multiplication
 `al` => Number you are multiplying and lower 8 bits of result

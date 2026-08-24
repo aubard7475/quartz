@@ -31,7 +31,7 @@ cqo ; converts a qword into a dqword
 
 # Examples
 
-> Caution: The following examples are unchecked and may be incorrect. Verify important info.
+> [!bug] The following examples are unchecked and may be wrong.
 
 `byte = word/byte`
 ```asm

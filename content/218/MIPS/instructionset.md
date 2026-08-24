@@ -1,6 +1,8 @@
 ---
 title: Instruction Set
 order: 310
+aliases:
+- Instruction Set
 ---
 
 > Note: I think the thingy that colors the code doesn't really understand MIPS, so the coloring might be a little weird. I appologize for the inconvience.

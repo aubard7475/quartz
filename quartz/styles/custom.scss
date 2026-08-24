@@ -186,6 +186,10 @@ a.internal:hover {
 //   font-size: 1rem;
 // }
 
+// gets rid of the list of items in a folder on folder pages
+.page-listing {
+  display: none;
+}
 
 
 // scroll bar go away

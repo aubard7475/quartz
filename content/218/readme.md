@@ -1,6 +1,7 @@
 ---
 title: README
 order: -10
+unlisted: true
 ---
 Professor:  Jorge Delgado Cervantes
 Semester:   SPRING 2026

@@ -11,7 +11,7 @@ If you upcast in the context of pointers then always use virtual functions so it
 
 Virtual functions become useful in the context of pointers.
 
-# Slicing Problem
+## Slicing Problem
 When you cast a derived class object as a base class object,
 it loses the derived class variables.
 

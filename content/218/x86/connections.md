@@ -3,6 +3,8 @@ title: C++ Connections
 order: 220
 ---
 
+> [!bug] The following information is unchecked and may be wrong.
+
 The following will compile your `cpp` code but will not link it:
 ```bash
 g++ -c x2.o

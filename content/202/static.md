@@ -3,7 +3,7 @@ title: Static Functions & Variables
 order: 7
 ---
 
-Static functions only allow static [[variables]]
+Static functions only allow static variables.
 Static variables are the same for EVERY object in the class.
 
 Consider the following code:

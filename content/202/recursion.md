@@ -49,7 +49,7 @@ The loop functiononly initilizes two variables (`n` and `sum`), while the recurs
 
 # Examples
 
-> Caution: The following examples are unchecked and may be incorrect. Verify important info.
+> [!bug] The following examples are unchecked and may be wrong.
 
 Factorial:
 ```cpp

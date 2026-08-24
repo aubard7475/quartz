@@ -31,7 +31,7 @@ That is all there is to know for addition and subtraction.
 
 # Examples
 
-> Caution: The following examples are unchecked and may be incorrect. Verify important info.
+> [!bug] The following examples are unchecked and may be wrong.
 
 x = y + 5
 ```asm

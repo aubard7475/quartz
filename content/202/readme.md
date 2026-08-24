@@ -1,6 +1,7 @@
 ---
 title: README
 order: 0
+unlisted: true
 ---
 
 Professor:  Dr. Kishore Konda Chidella
@@ -11,6 +12,5 @@ This is an abridged version, as my original notes were taken in Google Docs and 
 The following information is not included:
 - `#define`
 - `assert()`
-- Linked Lists
 - Stacks
 - Queues
