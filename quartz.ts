@@ -53,7 +53,9 @@ sortFn: (a, b) => {
       !node.slug.startsWith("images") &&
       !node.slug.startsWith("dictionary") &&
       !node.slug.startsWith("misc") &&
-      !node.slug.startsWith("unlisted")
+      !node.slug.startsWith("unlisted") &&
+      !node.slug.startsWith("stat") &&
+      !node.slug.startsWith("geol")
     )
   },
 })

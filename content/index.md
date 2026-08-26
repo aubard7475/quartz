@@ -22,7 +22,7 @@ title: " "
   </div>
   
 </div>
-  <img src="https://aubard7475.github.io/quartz/images/leaf.jpg" class="home-image">
+  <img src="https://cookies-notes.pages.dev/images/leaf.jpg" class="home-image">
 </div>
 
 
@@ -82,7 +82,7 @@ p.s. this site may look weird at some resolutions & aspect ratios, let me know i
     const results = document.getElementById("image");
 
     function loadChar() {
-        const today = new Date();
+        const today = new Date( "august 25");
 
         const month = today.getMonth() + 1; // +1 because months start at 0 for some reaosn
         const day = today.getDate();
