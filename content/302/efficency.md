@@ -1,5 +1,5 @@
 ---
-title: Efficency of a Program
+title: Efficiency of a Program
 order: 10
 ---
 
@@ -131,12 +131,14 @@ $$
   </iframe>
 </div> -->
 <div style="display: flex; justify-content: center;">
-  <img src="https://cookies-notes.pages.dev/images/efficency-graph.png">
+  <img src="https://cookies-notes.pages.dev/images/efficency-graph.png" style="width: 50%;">
 </div>
 
 $$
 \text{Thus, the statement does not hold at large values of } n \text{.}
 $$
+
+***
 
 # Big Ω Notation
 
@@ -186,6 +188,9 @@ n^2 + 13n \geq C \cdot n^2 \\
 n^2 + 13n \geq n^2 \\
 \text{Thus, the statement is true and strong.} 
 $$
+
+***
+
 # Big Θ Notation
 
 Recall that $O(f(n))$ represents an upper bound and $\Omega(f(n))$ represents a lower bound.
@@ -221,6 +226,8 @@ $$
 13n + 2 = \Omega(\sqrt{n}) \text{ is true}\\
 \text{Thus, the statement is false.}
 $$
+
+***
 
 # Comparing Growth Rates
 
@@ -288,6 +295,8 @@ L = \lim_{n \to \infty} \frac{2n^2+7)}{n^2} = \lim_{n \to \infty}\frac{4n}{2n} =
 2n^2 + 7 \text{ and } n^2 \text{ have the same growth rate }\\
 \text{Thus, the statement is true.}
 ```
+
+***
 
 # Logarithms
 
