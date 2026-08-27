@@ -105,7 +105,6 @@ $$
 2n^2 + 7 \leq C \cdot n^3 \\
 \text{Suppose } C = 9 \text{ and } n_0 = 1 \\
 2n^2 + 7 \leq 9n^3 \\
-\implies 2n^2 + 7 \leq 2n^3 + 7n^3 \\
 \text{Thus, the statement is true.}
 $$
 
