@@ -60,6 +60,21 @@
     font-size: 1.025em;
 }
 
+//table of contents
+button.toc-header h3 {
+    font-size: 0rem;
+}
+button.toc-header .fold {
+    opacity: 0;
+}
+ul.toc-content.overflow>li>a.in-view {
+    opacity: 1;
+    // font-size: 1.05em;
+}
+ul.toc-content.overflow>li>a {
+    opacity: .125;
+}
+
 // Handles the background grid effect
 // By ChatGPT
 $grid-fade-start: 50%;
@@ -198,3 +213,7 @@ a.internal:hover {
 }
 
 
+// bodl more bold
+strong {
+  font-weight: 900;
+}

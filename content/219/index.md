@@ -3,7 +3,6 @@ title: CS 219
 order: 219
 ---
 
-Professor: Kishore Konda Chidella
 Semester:  FALL 2026
 
 | Grading | | |

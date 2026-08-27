@@ -3,7 +3,6 @@ title: CS 218
 order: 218
 ---
 
-Professor:  Jorge Delgado Cervantes
 Semester:   SPRING 2026
 
 
