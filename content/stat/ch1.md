@@ -15,6 +15,7 @@ Syllogism is an example of simple deductive reasoning. There is a first and seco
 > Major Premise: All dogs are friendly.
 > Minor Premise: Your new neighbor has a dog.
 > Conclusion: Your neighbor's dog is friendly.
+
 The problem is the overgeneralization in the major premise—some might call it naiveté.
 
 # Inductive reasoning

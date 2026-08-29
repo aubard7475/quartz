@@ -3,6 +3,8 @@ title: Efficiency of a Program
 order: 10
 ---
 
+**Click [[efficiency-practice|here]] for a blank version of this page for practice.**
+
 What is an algorithm?
 - A step by step process that solves a problem
 - Gives the correct output for all inputs
@@ -274,7 +276,7 @@ L =
 \text{Thus, the statement is false.}
 $$
 
-(p) 2n^2 + 7 = O(n^3)
+(p) $2n^2 + 7 = O(n^3)$
 ```math
 L =
 \lim_{n \to \infty} \frac{2n^2+7}{n^3} 
@@ -287,7 +289,7 @@ n^3 \text{ is asymptotically larger than } 2n^2 + 7 \\
 \text{Thus, the statement is true.}
 ```
 
-(q) 2n^2 + 7 = O(n^2)
+(q) $2n^2 + 7 = O(n^2)$
 ```math
 L = \lim_{n \to \infty} \frac{2n^2+7)}{n^2} = \lim_{n \to \infty}\frac{4n}{2n} = 2 \\[0.5em]
 \text{Since } L = C = 2 > 0 \implies g(n) = f(n) \text{,} \\

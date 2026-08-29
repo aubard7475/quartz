@@ -217,3 +217,14 @@ a.internal:hover {
 strong {
   font-weight: 900;
 }
+
+.callout {
+  &[data-callout="blank"] {
+    --callout-icon: none;
+    --color: #ED7014;
+    --border: #ED7014;
+  }
+}
+.callout[data-callout="blank"] .callout-icon {
+  display: none;
+}
