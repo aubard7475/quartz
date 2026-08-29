@@ -7,7 +7,8 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: cookies-notes.pages.dev
+  # baseUrl: cookies-notes.pages.dev
+  baseUrl: aubard7475.github.io/quartz/
   ignorePatterns:
     - private
     - templates
