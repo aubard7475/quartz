@@ -4,8 +4,7 @@
 
 
 // Image of Kazuha on the left sidebar at the top
-// .left {
-//   &::before {
+// .left::before {
 //     content: "";
 //     display: block;
 //     width: 75%;
@@ -15,67 +14,120 @@
 //     background-position: center;
 //     background-repeat: no-repeat;
 //     margin: 0 auto;
-//   }
 // }
 
-// Disables rendering of the Explorer header
-.explorer .explorer-toggle {
-  pointer-events: none;
-  padding: 0;
-  min-height: 0;
-}
+//##########################################################
+// Sidebar elements
+//##########################################################
 
-.explorer .explorer-toggle h2 {
-  font-size: 0;
+// Reduces gap of elements on the left sidebar
+.left.sidebar, .right.sidebar {
+    gap: 0rem;
 }
-
-.explorer .explorer-toggle .fold {
-  display: none;
-}
-
-// Reduces distance between elements on the left sidebar
-.left.sidebar {
-  gap: 0rem;
-}
-// hover effect on files in exploerer
-.explorer a {
-  transition: all 0.15s ease;
-}
-.explorer a:hover {
-  text-decoration: underline;
-  
-  font-size: 1.025em;
-}
-// folder button color
-.explorer .folder-title {
-  color: #ED7014;
-}
-
-.explorer .folder-title:hover {
-  color: #ff9a4a;
-}
-// currently open file
-.explorer .nav-file-title.active {
-    font-weight: bold;
+// Enlarge effect on files in Exploerer
+.explorer a:hover, .explorer .nav-file-title.active {
     font-size: 1.025em;
+    transition: font-size 0.15s ease;
 }
-
-//table of contents
-button.toc-header h3 {
-    font-size: 0rem;
+.explorer a {
+    transition: font-size 0.15s ease;
 }
-button.toc-header .fold {
-    opacity: 0;
+// Underline effect on file currnetly hovered over in Explorer
+.explorer a:hover {
+    text-decoration: underline;
 }
+// Coloration of the tabs in the Table of Contents
 ul.toc-content.overflow>li>a.in-view {
     opacity: 1;
-    // font-size: 1.05em;
+    font-weight: normal;
 }
 ul.toc-content.overflow>li>a {
     opacity: .125;
+    font-weight: normal;
+    transition: opacity 3s ease;
+}
+// Aligns Search to be centered
+.left.sidebar .search {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+// Adjusts Table of Contents height
+.toc-content.overflow {
+    max-height: none;
 }
 
+
+//##########################################################
+// Page elements
+//##########################################################
+
+// Modifies the `single tick` code blocks
+code:not(pre code) {
+    background-color: transparent;
+}
+// Page previews
+a.internal {
+    background-color: transparent;
+}
+a.internal:hover {
+    color: #ED7014;
+    text-decoration: underline;
+}
+// Gets rid of the "#" on tags
+.tag-link {
+  display: inline-block;
+}
+.tag-link::first-letter {
+  font-size: 0;
+  letter-spacing: -1px;
+}
+// Makes bolded text more bold
+strong {
+  font-weight: 900;
+}
+// Creates a blank callout
+.callout {
+  &[data-callout="blank"] {
+    --callout-icon: none;
+    --color: transparent;
+    --border: transparent;
+    --bg: transparent;
+  }
+}
+.callout-title>.callout-title-inner>p, 
+.callout.is-collapsed>.callout-title>.fold-callout-icon, 
+.callout-title .fold-callout-icon {
+    --color: var(--dark);
+}
+.callout[data-callout="blank"] {
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: -10;
+  margin-bottom: -10;
+}
+
+//##########################################################
+// Disabling rendering of stuff
+//##########################################################
+
+button.mobile-explorer h2, button.desktop-explorer h2, 
+.explorer .fold, 
+button.toc-header h3, button.toc-header .fold, 
+.page-listing, 
+::-webkit-scrollbar, 
+.callout[data-callout="blank"] .callout-icon,
+.breadcrumb-element:first-child { 
+    display: none;
+}
+
+
+
+
+
+//##########################################################
 // Handles the background grid effect
+//##########################################################
 // By ChatGPT
 $grid-fade-start: 50%;
 $grid-fade-end: 100%;
@@ -146,85 +198,3 @@ $grid-fade-end: 100%;
 //   from { background-position: 0 0; }
 //   to   { background-position: 30px 0; }
 // }
-
-// Aligns some elements of the left sidebar to be centered
-.left.sidebar {
-  text-align: center;
-}
-.left.sidebar .search {
-  margin-left: auto;
-  margin-right: auto;
-}
-.left.sidebar .explorer {
-  text-align: left;
-}
-
-// Modifies the `single tick` code blocks
-code:not(pre code) {
-  background-color: transparent;
-  color: #ebebec;
-  border-radius: 6px;
-  padding: 2px 6px;
-}
-
-// Page previews
-a.internal {
-  color: #ebebec;
-  text-decoration: none;
-  font-weight: none;
-}
-
-a.internal:hover {
-  text-decoration: underline;
-  color: #ED7014;
-}
-
-// Gets rid of the "#" on tags
-.tag-link {
-  display: inline-block;
-}
-.tag-link::first-letter {
-  font-size: 0;
-  letter-spacing: -1px;
-}
-
-// Modifies the "X items with this tag" on tag pages
-// .page-listing > p {
-//   font-size: 0;
-// }
-// .page-listing > p::after {
-//   content: "This page has no content.";
-//   font-size: 1rem;
-// }
-// .page-listing > p::after {
-//   content: "The following pages have this tag:";
-//   font-size: 1rem;
-// }
-
-// gets rid of the list of items in a folder on folder pages
-.page-listing {
-  display: none;
-}
-
-
-// scroll bar go away
-::-webkit-scrollbar {
-  display: none;
-}
-
-
-// bodl more bold
-strong {
-  font-weight: 900;
-}
-
-.callout {
-  &[data-callout="blank"] {
-    --callout-icon: none;
-    --color: #ED7014;
-    --border: #ED7014;
-  }
-}
-.callout[data-callout="blank"] .callout-icon {
-  display: none;
-}

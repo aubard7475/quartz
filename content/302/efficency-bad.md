@@ -1,151 +1,240 @@
 ---
-title: Efficency of a Program
-order: 10
+title: Efficiency of a Program
 unlisted: true
+order: 10
 ---
+
+> A blank version of this page can be found [[efficiency-practice|here]]. 
 
 What is an algorithm?
 - A step by step process that solves a problem
 - Gives the correct output for all inputs
 - Complete the process in finite time
 
-**Real time:** Can be measured by having a virtual stopwatch to count how long a program takes to run.
-Will get different results on different machines.
+**Real time:** Can be measured by having a virtual stopwatch to count how long a program takes to run. Will get different results on different machines.
 
-**Scale/Growth Rate:** Count the amount of iterations the loops take.
-Will get same results on different machines.
-Construct a function that models the amount of iterations.
-We then categorize `f(n)` into an asymptotic complexity class.
 
-**Remark:** Recursion is magic, no one knows how it works.
+**Scale/Growth Rate:** Count the amount of iterations the loops take. Will get same results on different machines.
 
-Consider the asymptotic complexity classes:
-- Constant (Code is not scaling and will yield the same number of iterations no matter the input)
-- Logarithmic
-- Linear
-- Poly-logarithmic
-- Quadratic
-- Cubic
-- Exponential 
 
-As you go down that list, the growth rate increases, which implies a slower algorithm.
+We can categorize the growth rate into an **asymptotic complexity class**:
+| Name              | Function  |                     |
+| -                 | -         | -                   |
+| Constant          | $n^2$     | Slower growth rate  |
+| Logarithmic       | $\log n$  |                     |
+| Linear            | $n$       |                     |
+| Poly-logarithmic  | $log^kn$  |                     |
+| Quadratic         | $n^2$     |                     |
+| Cubic             | $n^3$     |                     |
+| Exponential       | $C^n$     | Higher growth rate  |
+
+***
 
 # Big O notation
 
-O(n) contains all linear functions and less than linear growth rate functions.
-
 Consider the equation:
-g(n) = O(f(n))
-The equals means the same thing as the set operator.
-Sees if g(n) fits in the set:
-g(n) <= C * f(n)
-Where C>0 and n>0
+$g(n) = O(f(n))$
+In this case, $=$ has the meaning of $\in$.
+Thus, it translates to: 
 
-Big O notation uses the most simplified version (so n not 5n+3)
+$g(n)$ is in the set of all functions whose growth rate is at most $f(n)$.
 
-Ex: O(n) contains all functions that are linear.
+In order to determine the validity of that statement, prove that:
+$$
+g(n) \leq C \cdot f(n) \\
+\text{Where } C>0 \text{ and } n_0>0 \\
+\text{For all } n
+$$
 
-## Examples:
+$f(n)$ can be any function, but it is proper to use one of the **asymptotic complexity classes**.
+
+## Examples
 
 Prove or disprove the following statements.
 
-### n = O(n)
-n <= C * n
-Suppose C = 1 and n(0) = 1
-### 5n = O(n)
-5n <= C * n
-Suppose C = 5 and n(0) = 1
+(a) $n = O(n)$
+$$
+n \leq C \cdot n
+\\
+\text{Suppose } C = 1 \text{ and } n_0 = 1
+\\
+n \leq 1 \cdot n
+\implies n \leq n
+\\
+\text{Thus, the statement is true.}
+$$
 
+(b) $5n = O(n)$
+$$
+5n \leq C \cdot n 
+\\
+\text{Suppose } C = 5 \text{ and } n_0 = 1
+\\
+5n \leq 5 \cdot n \implies 5n \leq 5n
+\\
+\text{Thus, the statement is true.}
+$$
 
-### 10n + 3 = O(n)
-10n + 3 <= C * n
-Suppose C = 13 and n(0) = 1
-10n + 3 <= 13n
-10n + 3 <= 10n + 3n
-3 <= 3n
+(c) $10n + 3 = O(n)$
+$$
+10n + 3 \leq C \cdot n
+\\
+\text{Suppose } C = 13 \text{ and } n_0 = 1
+\\
+10n + 3 \leq 13n
+\\
+\implies 10n + 3 \leq 10n + 3n
+\\
+\implies 3 \leq 3n
+\\
+\text{Thus, the statement is true.}
+$$
 
-### sqrt(n) = O(n)
-sqrt(n) <= C * n
-Suppose C = 1 and n(0) = 1
-sqrt(n) <= sqrt(n) * sqrt(n)
-1 <= sqrt(n)
-Correct but a weak statement
-Stronger statement: sqrt(n) = O(sqrt(n))
+(d) $\sqrt{n} = O(n)$
+$$
+\sqrt{n} \leq C \cdot n
+\\
+\text{Suppose } C = 1 \text{ and } n_0 = 1
+\\
+\sqrt{n} \leq \sqrt{n} \cdot \sqrt{n}
+\\
+\implies 1 \leq \sqrt{n}
+\\
+\text{Thus, the statement is true.}
+$$
 
-### 2n^2 + 7 = O(n^3)
-2n^2 + 7 <= C * n^3
-Suppose C = 9 and n(0) = 1
-2n^2 + 7 <= 9n^3
-2n^2 + 7 <= 2n^3 + 7n^3
+(e) $2n^2 + 7 = O(n^3)$
+$$
+2n^2 + 7 \leq C \cdot n^3 \\
+\text{Suppose } C = 9 \text{ and } n_0 = 1 \\
+2n^2 + 7 \leq 9n^3 \\
+\text{Thus, the statement is true.}
+$$
 
-### 2n^2 + 7 = O(n^2)
-2n^2 + 7 <= C * n^2
-Suppose C = 9 and n(0) = 1
+(f) $2n^2 + 7 = O(n^2)$
+$$
+2n^2 + 7 \leq C \cdot n^2 \\
+\text{Suppose } C = 9 \text{ and } n_0 = 1 \\
+2n^2 + 7 \leq 9 \cdot n^2 \implies 2n^2 + 7 \leq 9n^2 \\
+\text{Thus, the statement is true.}
+$$
 
-### 2n^2 + 7 = O(n)
-Suppose C = 1000000000000000 and n(0) = 1
-> ![missing] Figure out how to put a graph here of y = 100000n and y = 2n^2 + 7
- Statement does not hold.
+(g) $2n^2 + 7 = O(n)$
+$$
+2n^2 + 7 \leq C \cdot n \\
+\text{Suppose } C = 10 \text{ and } n_0 = 1
+$$
+<!-- <div style="width: 100%; height: 500px;">
+  <iframe
+    src="https://www.desmos.com/calculator/witnxger9l"
+    width="100%"
+    height="100%"
+    frameborder="0">
+  </iframe>
+</div> -->
+<div style="display: flex; justify-content: center;">
+  <img src="https://cookies-notes.pages.dev/images/efficency-graph.png" style="width: 50%;">
+</div>
+
+$$
+\text{Thus, the statement does not hold at large values of } n \text{.}
+$$
+
+***
 
 # Big Ω Notation
 
-g(n) = Ω(f(n)) lower bound
-g(n) >= C * f(n)
-C > 0
-n>=n(0)>0
+Recall that $O(f(n))$ represents an upper bound.
+
+$\Omega(f(n))$ represents a lower bound.
+
+In order to prove if $g(n) = \Omega(f(n))$: 
+$$
+g(n) \geq C \cdot f(n) \\
+\text{Where } C>0 \text{ and } n_0>0 \\
+\text{For all } n
+$$
 
 ## Examples
 
 Prove or disprove the following statements.
 
-### 3n + 2 = Ω(n)
-3n + 2 >= C * n
-Suppose C = 3 and n(0) = 1
+(h) $3n + 2 = \Omega(n)$
+$$
+3n + 2 \geq C \cdot n \\
+\text{Suppose } C = 3 \text{ and } n_0 = 1 \\
+3n + 2 \geq 3n \\
+\text{Thus, the statement is true.}
+$$
 
-### n^2  + 13n = Ω(n)
-n^2 + 13n >= C * n
-Suppose C = 1 and n(0) = 1
-Correct but a weak statement
+(i) $n^2  + 13n = \Omega(n)$
+$$
+n^2 + 13n \geq C \cdot n \\
+\text{Suppose } C = 1 \text{ and } n_0 = 1 \\
+n^2 + 13n \geq n \\
+\text{Thus, the statement is true.} \\
+\text{However, this is a weak statement and can be improved (see below)}
+$$
+(j) $n^2  + 13n = \Omega(n^3)$
+$$
+n^2 + 13n \geq C \cdot n^3 \\
+\text{Suppose } C = 1,000,000 \text{ and } n_0 = 1 \\
+n^2 + 13n \geq 1,000,000n \\
+\text{Thus, the statement is false.} \\
+\text{This statement is too much and is no longer valid}
+$$
+(k) $n^2 + 13n = \Omega(n^2)$
+$$
+n^2 + 13n \geq C \cdot n^2 \\
+\text{Suppose } C = 1 \text{ and } n_0 = 1 \\
+n^2 + 13n \geq n^2 \\
+\text{Thus, the statement is true and strong.} 
+$$
 
-### n^2  + 13n = Ω(n^3)
-n^2 + 13n >= C * n^3
-Suppose C = 1/1,000,000 and n(0) = 1
-Statement does not hold
+***
 
-### n^2 + 13n = Ω(n^2)
-n^2 + 13n >= C * n^2
-Suppose C = 1 and n(0) = 1
-Correct and a strong statement
+# Big Θ Notation
 
-# Big θ Notation
+Recall that $O(f(n))$ represents an upper bound and $\Omega(f(n))$ represents a lower bound.
 
-g(n) = θ(f(n))
-g(n) = O(f(n)) and g(n) = Ω(f(n))
-
-Exact Bound
-
-> ![missing] Add a graph of O(f(n)) and Ω(f(n)) with θ(f(n)) in-between them.
+$\Theta(f(n))$ represents an exact bound. In other words, 
+$$
+g(n) = \Theta(f(n)) \\
+\Leftrightarrow \\
+g(n) = O(f(n)) \wedge g(n) = \Omega(f(n))
+$$
 
 ## Examples
 
 Prove or disprove the following statements.
 
-### 13n + 2 = θ(n)
-13n + 2 = O(n)
-13n + 2 = Ω(n)
-Thus, the statement is valid.
+(l) $13n + 2 = \Theta(n)$
+$$
+13n + 2 = O(n) \text{ is true} \\
+13n + 2 = \Omega(n) \text{ is true} \\
+\text{Thus, the statement is true.}
+$$
 
-### 13n + 2 = θ(n^2)
-13n + 2 = O(n^2)
-13n + 2 = Ω(n^2) fails.
-Thus, the statement does not hold.
+(m) $13n + 2 = \Theta(n^2)$
+$$
+13n + 2 = O(n^2) \text{ is true}\\
+13n + 2 = \Omega(n^2) \text{ is false}\\
+\text{Thus, the statement is false.}
+$$
 
-### 13n + 2 = θ(sqrt(n))
-13n + 2 = O(sqrt(n)) fails.
-13n + 2 = Ω(sqrt(n))
-Thus, the statement does not hold.
+(n) $13n + 2 = \Theta(\sqrt{n})$
+$$
+13n + 2 = O(\sqrt{n}) \text{ is false}\\
+13n + 2 = \Omega(\sqrt{n}) \text{ is true}\\
+\text{Thus, the statement is false.}
+$$
 
-# Comparing growth rates
+***
+
+# Comparing Growth Rates
+
+In order to compare the growth rate of two functions, we can also use limits.
+This is a more matematical and precise method.
 
 ```math
 \lim_{n \to \infty} \frac{g(n)}{f(n)} 
@@ -170,57 +259,59 @@ L = 0 \implies g(n) < f(n)
 > ```
 > Then you may take the derivative of the numerator and denominator and attempt to find the limit again:
 > ```math
-> \lim_{n \to \infty} \frac{g(n)}{f(n)} = \frac{g'(n)}{f'(n)}
-> \qquad 
-> \text{or}
-> \qquad 
-> \lim_{n \to \infty} \frac{g(n)}{f(n)} = = \frac{g'(n)}{f'(n)}
+> \lim_{n \to \infty} \frac{g(n)}{f(n)} = \lim_{n \to \infty} \frac{g'(n)}{f'(n)}
 > ```
 ## Examples
 
 Prove or disprove the following statements.
 
-### 2n^2 + 7 = O(n)
-```math
-\lim_{n \to \infty} \frac{2n^2+7)}{n} = \lim_{n \to \infty}\frac{n(2n+7/n}{n} = \lim_{n \to \infty}2n + 7/n = \infty
-```
-Thus, 2n^2 + 7 is asymptotically larger than n.
-Thus, the statement is not true.
+(o) $2n^2 + 7 = O(n)$
+$$
+L = 
+\lim_{n \to \infty} \frac{2n^2+7}{n} 
+= \lim_{n \to \infty}\frac{n(2n+\frac{7}{n})}{n} 
+= \lim_{n \to \infty}(2n + \frac{7}{n}) = \infty 
+\\[0.5em]
+\text{Since } L = \infty \implies g(n) > f(n) \text{,} \\
+2n^2 + 7 \text{ is asymptotically larger than } n\\
+\text{Thus, the statement is false.}
+$$
 
-### 2n^2 + 7 = O(n^3)
+(p) $2n^2 + 7 = O(n^3)$
 ```math
-\lim_{n \to \infty} \frac{2n^2+7)}{n^3} = \lim_{n \to \infty}\frac{4n}{3n^2} = \lim_{n \to \infty}\frac{4}{3n} = \frac{4}{\infty} = 0
+L =
+\lim_{n \to \infty} \frac{2n^2+7}{n^3} 
+= \lim_{n \to \infty}\frac{4n}{3n^2} 
+= \lim_{n \to \infty}\frac{4}{3n} 
+= \frac{4}{\infty} 
+= 0 \\[0.5em]
+\text{Since } L = 0 \implies g(n) < f(n) \text{,} \\
+n^3 \text{ is asymptotically larger than } 2n^2 + 7 \\
+\text{Thus, the statement is true.}
 ```
-Thus, n^3 is asymptotically larger than 2n^2 + 7.
-Thus, the statement is true.
 
-### 2n^2 + 7 = O(n^2)
+(q) $2n^2 + 7 = O(n^2)$
 ```math
-\lim_{n \to \infty} \frac{2n^2+7)}{n^2} = \lim_{n \to \infty}\frac{4n}{2n} = 2
+L = \lim_{n \to \infty} \frac{2n^2+7)}{n^2} = \lim_{n \to \infty}\frac{4n}{2n} = 2 \\[0.5em]
+\text{Since } L = C = 2 > 0 \implies g(n) = f(n) \text{,} \\
+2n^2 + 7 \text{ and } n^2 \text{ have the same growth rate }\\
+\text{Thus, the statement is true.}
 ```
-Thus, 2n^2 + 7 and n^2 have the same growth rate.
-Thus, the statement is true.
-Therefore, 2n^2 + 7 = θ(n^2)
+
+***
 
 # Logarithms
 
-Consider the equation:
-θ(log(n))
-Typically, log(n) implies a base of 10.
-Is that still true?
+Consider the equation $\Theta(\log{n})$.
+Typically, $\log{n}$ implies a base of $10$.
 
-log(basea)θ = θ(log(n))
-log(basea)θ = C * log(basea)(n)
-1 = C
-
-log(basea)θ = θ(log(n))
-log(basea)θ = C * log(baseb)(n)
+Is this still true?
 
 > [!abstract] Recall
-> The change of base formula for log
+> The base of a log can be changed via the formula:
+> $$
+> \log_{b}a = \frac{\log_{x}a}{\log_{x}b}
+> $$
 
-log(baseb)(n) / log(baseb)(n) = C * log(baseb)(n)
-1/log(baseb)(n) = C
-
-Therefore, θ(log(n)) contains all log functions of any base, since we can easily convert from one to another.
+Therefore, $\Theta(\log{n})$ contains all log functions of any base, since we can easily convert from one to another.
 

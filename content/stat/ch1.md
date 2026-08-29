@@ -2,7 +2,7 @@
 title: Chapter 1
 ---
 
-Empiricism rests on the idea that nature is governed by laws or principles that create predictable patterns which can be discovered through careful observation. 
+**Empiricism** rests on the idea that nature is governed by laws or principles that create predictable patterns which can be discovered through careful observation. 
 
 Statistics is the quantitative technology for empirical science.
 
@@ -11,7 +11,7 @@ Most of the "evidence" you will evaluate will be a story derived from data inter
 # Deductive Reasoning
 You start with a general principle(s)—similar to axioms in mathematics—as a starting point and use logic to deduce a conclusion. It is the kind of reasoning you used when developing proofs in your geometry course in high school.
 
-Syllogism is an example of simple deductive reasoning. There is a first and second premise and finally a conclusion which follows logically from these premises.
+**Syllogism** is an example of simple deductive reasoning. There is a first and second premise and finally a conclusion which follows logically from these premises.
 > Major Premise: All dogs are friendly.
 > Minor Premise: Your new neighbor has a dog.
 > Conclusion: Your neighbor's dog is friendly.
