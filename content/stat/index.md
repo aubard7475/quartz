@@ -1,9 +1,8 @@
 ---
-title: Stat 411
+title: STAT 411
+order: 411
 ---
 
-Professor: Chih-Hsiang Ho
-GA: James Ooko
 Semester:  FALL 2026
 
 | Grading | |

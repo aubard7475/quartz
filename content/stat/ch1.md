@@ -1,24 +1,25 @@
 ---
 title: Chapter 1
+order: 1
 ---
+
+> The majority of the content on this page is copy-pasted from the textbook.
 
 **Empiricism** rests on the idea that nature is governed by laws or principles that create predictable patterns which can be discovered through careful observation. 
 
-Statistics is the quantitative technology for empirical science.
+**Statistics** is the quantitative technology for empirical science. Most of the "evidence" you will evaluate will be a story derived from data interpreted in statistical form.
 
-Most of the "evidence" you will evaluate will be a story derived from data interpreted in statistical form.
-
-# Deductive Reasoning
+## Deductive Reasoning
 You start with a general principle(s)—similar to axioms in mathematics—as a starting point and use logic to deduce a conclusion. It is the kind of reasoning you used when developing proofs in your geometry course in high school.
 
 **Syllogism** is an example of simple deductive reasoning. There is a first and second premise and finally a conclusion which follows logically from these premises.
-> Major Premise: All dogs are friendly.
-> Minor Premise: Your new neighbor has a dog.
-> Conclusion: Your neighbor's dog is friendly.
+\> Major Premise: All dogs are friendly.
+\> Minor Premise: Your new neighbor has a dog.
+\> Conclusion: Your neighbor's dog is friendly.
 
 The problem is the overgeneralization in the major premise—some might call it naiveté.
 
-# Inductive reasoning
+## Inductive reasoning
 
 i.e.t. a prediction 
 
@@ -30,19 +31,19 @@ Unlike deductive reasoning, induction is not guaranteed to produce absolutely tr
 
 # Basic Statistical Concepts
 
-A population is the total set of subjects or things we are interested in studying.
+A **population** is the total set of subjects or things we are interested in studying.
 
-A list containing all members of the population is referred to as a frame.
+A list containing all members of the population is referred to as a **frame**.
 
-A strict definition of a census is a survey that includes all the elements or units in the frame.
+A **census** is a survey that includes all the elements or units in the frame.
 
-A measurement that describes some aspect of the entire population is called a population parameter. A population can have many parameters.
+A measurement that describes some aspect of the entire population is called a **population parameter**. A population can have many parameters.
 
-A sample is a subset of the population which is used to gain insight about the population. Samples are used to represent a larger group, the population.
+A **sample** is a subset of the population which is used to gain insight about the population. Samples are used to represent a larger group, the population.
 
-A statistic is a fact or characteristic about the sample.
+A **statistic** is a fact or characteristic about the sample.
 
-# Descriptive Statistics
+## Descriptive Statistics
 
 i.e.t. a claim with facts
 
@@ -50,13 +51,10 @@ The emphasis in descriptive statistics is analyzing observed measurements, usual
 
 Descriptive statistics is the collection, organization, analysis, and presentation of data.
 
-# Inferential Statistics
+## Inferential Statistics
 
 i.e.t. an educated guess
 
 Historically, the ozone layer over most of the Earth's surface is about 3 millimeters thick. A problem such as trying to assess the ozone thickness over the entire surface of the earth at a point in time would be an impossible sample space to measure. There is no way to know the actual thickness of the ozone layer except by an inductive process: namely sampling, data collection, and statistical inference.
 
 The objective of inferential statistics is to make reasonable estimates of population characteristics using sample data.
-
-> [!warning] Review
-> I am a little confused on identifying inductive vs deductive reasoning

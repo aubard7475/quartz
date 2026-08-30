@@ -95,9 +95,9 @@ strong {
     --bg: transparent;
   }
 }
-.callout-title>.callout-title-inner>p, 
-.callout.is-collapsed>.callout-title>.fold-callout-icon, 
-.callout-title .fold-callout-icon {
+.callout[data-callout="blank"] .callout-title > .callout-title-inner > p,
+.callout[data-callout="blank"].is-collapsed > .callout-title > .fold-callout-icon,
+.callout[data-callout="blank"] .callout-title .fold-callout-icon {
     --color: var(--dark);
 }
 .callout[data-callout="blank"] {

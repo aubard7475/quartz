@@ -1,64 +1,75 @@
 ---
-title: Chapter 1
+title: Chapter 2
+order: 2
 ---
 
+> The majority of the content on this page is copy-pasted from the textbook.
 
-# §2.1 The Evolution of Data
+# $2.1$ The Evolution of Data
 
-Volume is the scale or amount of the data, and Big Data implies large volumes of data.
+**Volume** is the scale or amount of the data, and Big Data implies large volumes of data.
 
-Variety is the different forms data can take—from traditional data elements in a structured database to highly unstructured images, social media feeds, movies, video, and audio.
+**Variety** is the different forms data can take—from traditional data elements in a structured database to highly unstructured images, social media feeds, movies, video, and audio.
 
-Velocity is how fast data is being sent to the data processing and data management infrastructure.
+**Velocity** is how fast data is being sent to the data processing and data management infrastructure.
 
-Veracity is the trustworthiness of the data. Uncertainty, bias, or inaccuracies in the data make the information less valuable for meaningful analysis and decision making.
+**Veracity** is the trustworthiness of the data. Uncertainty, bias, or inaccuracies in the data make the information less valuable for meaningful analysis and decision making.
 
-# §2.2 Empirical Foundations: Measurement and Scales
+***
 
-A scale is a rule that assigns a number to objects or events.
+# $2.2$ Empirical Foundations: Measurement and Scales
 
-Measurement is the process of assigning a number to an object or event by comparing it to a scale.
+A **scale** is a rule that assigns a number to objects or events.
 
-The level of measurement refers to the nature and properties of the scales used to measure a variable. There are four commonly recognized levels of measurement: ratio, interval, ordinal, and nominal.
+**Measurement** is the process of assigning a number to an object or event by comparing it to a scale.
 
-Ratio scales produce numeric values, have a meaningful zero, have measurement units on a scale of equal size, and have a meaningful ratio of two measurements.
 
-Interval scales produce numerical values where the units of the scale are of equal size and the measurements can be meaningfully ordered.
+The **level of measurement** refers to the nature and properties of the scales used to measure a variable. There are four commonly recognized levels of measurement:
 
-Ordinal scales represent measurements that only possess the property of ordinality.
+- **Ratio scales** produce numeric values, have a meaningful zero, have measurement units on a scale of equal size, and have a meaningful ratio of two measurements.
 
-Nominal scales represent labels or names for categories which do not have any inherent order or numerical significance.
+- **Interval scales** produce numerical values where the units of the scale are of equal size and the measurements can be meaningfully ordered.
 
-# §2.3 Empiricism at Work: Data Collection
+- **Ordinal scales** represent measurements that only possess the property of ordinality.
 
-Confounding variables are "extra" variables that are not accounted for during experimentation and can cause results to become skewed.
+- **Nominal scales** represent labels or names for categories which do not have any inherent order or numerical significance.
 
-A response variable measures the outcome of interest in an experiment or study.
+***
 
-An explanatory variable causes or explains changes in a response variable.
+# $2.3$ Empiricism at Work: Data Collection
 
-A placebo is a fake treatment that has the potential to cause a response.
+**Confounding variables** are "extra" variables that are not accounted for during experimentation and can cause results to become skewed.
 
-Double-blind studies are used to counteract the placebo effect. In a double-blind study, neither the subjects nor the evaluators—those measuring the response variable—are told who is in the control group and who is in the treatment group.
+- A **response variable** measures the outcome of interest in an experiment or study.
 
-Bias is the tendency to overestimate or underestimate the value of a certain population parameter.
+- An **explanatory variable** causes or explains changes in a response variable.
 
-# §2.4 Data Classification
+A **placebo** is a fake treatment that has the potential to cause a response.
 
-Qualitative data classify a particular descriptive characteristic and are measured on a nominal or ordinal scale.
+**Double-blind studies** are used to counteract the placebo effect. In a double-blind study, neither the subjects nor the evaluators—those measuring the response variable—are told who is in the control group and who is in the treatment group.
 
-Quantitative data are numerical data that are objectively measured on an interval or ratio scale.
+**Bias** is the tendency to overestimate or underestimate the value of a certain population parameter.
 
-Data in which the observations are restricted to a set of distinct numerical values that possess gaps is called discrete.
+***
 
-Data that can take on any value within some interval is called continuous.
+# $2.4$ Data Classification
 
-# §2.5 Time Series Data vs. Cross-Sectional Data
+**Qualitative data** classify a particular descriptive characteristic and are measured on a nominal or ordinal scale.
 
-Time series data originates as measurements usually taken from some process over equally spaced intervals of time.
+**Quantitative data** are numerical data that are objectively measured on an interval or ratio scale.
 
-A stationary process refers to time series data whose central value and variation patterns remain constant over the series.
+Data in which the observations are restricted to a set of distinct numerical values that possess gaps is called **discrete**.
 
-A nonstationary process A nonstationary process refers to time series data that possesses time-varying behavior.
+Data that can take on any value within some interval is called **continuous**.
 
-Cross-sectional data are measurements created at approximately the same period of time.
+***
+
+# $2.5$ Time Series Data vs. Cross-Sectional Data
+
+**Time series data** originates as measurements usually taken from some process over equally spaced intervals of time.
+
+- A **stationary process** refers to time series data whose central value and variation patterns remain constant over the series.
+
+- A **nonstationary process** A nonstationary process refers to time series data that possesses time-varying behavior.
+
+**Cross-sectional data** are measurements created at approximately the same period of time.
