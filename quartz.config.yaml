@@ -43,7 +43,7 @@ configuration:
         textHighlight: "#b3aa0288"
 plugins:
   - source: github:quartz-community/created-modified-date
-    enabled: false
+    enabled: true
     options:
       defaultDateType: modified
       priority:
@@ -69,7 +69,7 @@ plugins:
     enabled: true
     order: 40
   - source: github:quartz-community/table-of-contents
-    enabled: true
+    enabled: false
     order: 60
     layout:
       position: right
@@ -223,7 +223,14 @@ plugins:
       links:
         Is everything on this page accurate?: https://cookies-notes.pages.dev/images/answer.jpg
   - source: github:quartz-community/recent-notes
-    enabled: false
+    enabled: true
+    options:
+      title: "Recently Created/Modified"
+      limit: 5
+      showTags: false
+    layout:
+      position: right
+      priority: 100
   - source: github:quartz-community/spacer
     enabled: true
     options: {}

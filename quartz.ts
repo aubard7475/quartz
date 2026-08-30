@@ -9,6 +9,7 @@ Long story short: this file is what sorts the Explorer menu
 import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
 import * as ExternalPlugin from "./.quartz/plugins"
 
+
 ExternalPlugin.Explorer({
 sortFn: (a, b) => {
   const orderA = a.data?.order
@@ -51,12 +52,21 @@ sortFn: (a, b) => {
   filterFn: (node) => {
     return (
       !node.slug.startsWith("images") &&
-      !node.slug.startsWith("misc") &&
       !node.slug.startsWith("unlisted") &&
       !node.slug.startsWith("geol")
     )
   },
 })
+
+ExternalPlugin.RecentNotes({
+
+  filter: (f) => {
+    return !f.slug.startsWith("images") &&
+           !f.slug.startsWith("unlisted") &&
+           !f.slug.startsWith("geol")
+  },
+})
+
 
 const config = await loadQuartzConfig()
 export default config

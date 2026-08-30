@@ -10,7 +10,6 @@ What is an algorithm?
 
 **Real time:** Can be measured by having a virtual stopwatch to count how long a program takes to run. Will get different results on different machines.
 
-
 **Scale/Growth Rate:** Count the amount of iterations the loops take. Will get same results on different machines.
 
 
@@ -115,27 +114,6 @@ Prove or disprove the following statements.
 > 2n^2 + 7 \leq 9 \cdot n^2 \implies 2n^2 + 7 \leq 9n^2 \\
 > \text{Thus, the statement is true.}
 > $$
-
-(g) $2n^2 + 7 = O(n)$
-$$
-2n^2 + 7 \leq C \cdot n \\
-\text{Suppose } C = 10 \text{ and } n_0 = 1
-$$
-<!-- <div style="width: 100%; height: 500px;">
-  <iframe
-    src="https://www.desmos.com/calculator/witnxger9l"
-    width="100%"
-    height="100%"
-    frameborder="0">
-  </iframe>
-</div> -->
-<div style="display: flex; justify-content: center;">
-  <img src="https://cookies-notes.pages.dev/images/efficency-graph.png" style="width: 50%;">
-</div>
-
-$$
-\text{Thus, the statement does not hold at large values of } n \text{.}
-$$
 
 ***
 

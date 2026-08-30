@@ -19,48 +19,40 @@ Why study geology?
 - Planning vacations
 - Buying a house
 
-Nevada's elevation ranges from 479ft to 13,140ft.
+Facts about Nevada:
+- Nevada's elevation ranges from 479ft to 13,140ft.
+- Nevada is the third most seismically active state in the U.S.
+- Nevada is the driest state in the U.S.
 
-Nevada is the third most seismically active state in the U.S.
+# Fields in Geology
 
-Nevada is the driest state in the U.S.
+| Field | Description |
+| - | - |
+| Hydrological & Environmental Science  | Study movement, distribution, etc of water. |
+| Economic | Gold, silver, lithium, etc |
+|Structural | Crust movements, deformations, etc |
+| Geophysics |Investigating mineral behavior and rock deformation |
+|Planetary | Other planets and asteroids |
+| Paleoclimate & Paleoecology |Reconstructing past environments, climate changes, and evolutionary biology using fossils |
 
-Hydrological & Environmental Science 
-- Study movement, distribution, etc of water.
-
-Economic
-- Gold, silver, lithium, etc
-
-Structural 
-- Crust movements, deformations, etc
-
-Geophysics
-- Investigating mineral behavior and rock deformation
-
-Planetary
-- Other planets and asteroids
-
-Paleoclimate & Paleoecology
-- Reconstructing past environments, climate changes, and evolutionary biology using fossils
+# Scientific Method
 
 Basic research is curiosity driven, wanting to explain the "why"
 Applied research is need driven, wanting to find a solution to a problem.
 
-# Scientific Method
-
 1. Make observations, collect data 
-- My toaster won't toast
+Ex: My toaster won't toast
 2. Develop ideas to explain observations, called a hypothesis
-- Maybe the outlet is broken
+Ex: Maybe the outlet is broken
 3. Come up with ways to test the hypothesis
-- Plug the toaster into a different outlet
+Ex: Plug the toaster into a different outlet
 4. Test the hypothesis, to validate or refute it
-- My bread toasts OR My bread still won't toast
+Ex: My bread toasts OR My bread still won't toast
 5. A hypothesis that has been tested repeatedly is called a theory
 
-A hypothesis is an untested explanation.
-A theory is a well-tested and widely accepted view.
-A law is a theory that has no sensible reasons to refute it.
+A **hypothesis** is an untested explanation.
+A **theory** is a well-tested and widely accepted view.
+A **law** is a theory that has no sensible reasons to refute it.
 
 # Origin of the Earth
 

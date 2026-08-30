@@ -107,3 +107,5 @@ How do minerals form?
 
 Fun fact: A synthetic diamond is not a mineral because its not naturally occuring.
 Water is not a mineral but ice is.
+
+
