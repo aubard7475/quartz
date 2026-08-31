@@ -290,3 +290,26 @@ Is this still true?
 
 Therefore, $\Theta(\log{n})$ contains all log functions of any base, since we can easily convert from one to another.
 
+## Examples
+
+
+$\log_{2}n = O(n)$ is true
+
+$\sqrt{n} = O(\log n)$
+$$
+\sqrt{n} \leq C \cdot \ln n
+ \\
+\lim{n \to \infty} \frac{\sqrt{n}}{\ln n} \\
+= \lim{n \to \infty} \frac{\frac{1}{2\sqrt{n}}}{\frac{1}{n}}\\
+= \lim{n \to \infty} \frac{1}{2\sqrt{n}} / \frac{1}{n} \\
+= \lim{n \to \infty} \frac{n}{2\sqrt{n}} \\
+= \lim{n \to \infty} \frac{\sqrt{n}}{2} \\
+= \infty \\
+\sqrt{n} \text{has a larger growth rate than} \ln n
+$$
+
+$n^C = O(\log n) \text{ where } 0 < C < 1$
+$$
+\text{Thus, the statement is false.}
+$$
+
