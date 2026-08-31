@@ -1,7 +1,7 @@
 ---
 title: Dandy's World Toons
 order: -1
-unlisted: true
+unlisted: false
 ---
 
 <br>
