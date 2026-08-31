@@ -223,7 +223,7 @@ plugins:
       links:
         Is everything on this page accurate?: https://cookies-notes.pages.dev/images/answer.jpg
   - source: github:quartz-community/recent-notes
-    enabled: true
+    enabled: false
     options:
       title: "Recent"
       limit: 5
