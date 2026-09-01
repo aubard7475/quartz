@@ -26,11 +26,11 @@ A **scale** is a rule that assigns a number to objects or events.
 
 The **level of measurement** refers to the nature and properties of the scales used to measure a variable. There are four commonly recognized levels of measurement:
 
-- **Ratio scales** produce numeric values, have a meaningful zero, have measurement units on a scale of equal size, and have a meaningful ratio of two measurements.
+- **Ratio scales** produce numeric values, have a meaningful zero, have measurement units on a scale of equal size, and have a meaningful ratio of two measurements. Ex: volume, hieght, weight, time, distance, presure, money.
 
-- **Interval scales** produce numerical values where the units of the scale are of equal size and the measurements can be meaningfully ordered.
+- **Interval scales** produce numerical values where the units of the scale are of equal size and the measurements can be meaningfully ordered. Ex: Tempeture (the differnce between 1 and 3 degrees is the same as 8 and 10 degrees). 0 does not nessesarily mean absence. Ex: 0 degrees does not mean there is no tempeture.
 
-- **Ordinal scales** represent measurements that only possess the property of ordinality.
+- **Ordinal scales** represent measurements that only possess the property of ordinality. Not exact and are often opinion based. Ex: What is your pain level today?
 
 - **Nominal scales** represent labels or names for categories which do not have any inherent order or numerical significance.
 
@@ -58,9 +58,9 @@ A **placebo** is a fake treatment that has the potential to cause a response.
 
 **Quantitative data** are numerical data that are objectively measured on an interval or ratio scale.
 
-Data in which the observations are restricted to a set of distinct numerical values that possess gaps is called **discrete**.
+Data in which the observations are restricted to a set of distinct numerical values that possess gaps is called **discrete**. Counting things.
 
-Data that can take on any value within some interval is called **continuous**.
+Data that can take on any value within some interval is called **continuous**. Measureable.
 
 ***
 
