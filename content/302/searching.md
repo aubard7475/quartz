@@ -19,25 +19,25 @@ bool find(int a[], int n, int s) {
 ```
 
 The **worst case** is if `s` is not in `a` or if `s` is at `i = n-1`
-$$
-O(n)
-\Theta(n)
-\Omega(n)
-$$
+
+$O(n)$
+$\Theta(n)$
+$\Omega(n)$
+
 
 The **best case** is if `s` is at `i = 0`
-$$
-O(1)
-\Theta(1)
-\Omega(1)
-$$
+
+$O(1)$
+$\Theta(1)$
+$\Omega(1)$
+
 
 The **average case** is if `s` is somewhere in the middle of `a`
-$$
-O(n)
-\Theta(n)
-\Omega(n)
-$$
+
+$O(n)$
+$\Theta(n)$
+$\Omega(n)$
+
 
 # Binary Search
 
@@ -66,13 +66,13 @@ bool find(int a[], int n, int s) {
 ```
 
 The **worst case** is if `s` is not in `a` or if `s` is at `l == r`
-$$
-O(|log n)
-\Theta(_log n)
-\Omega(|log n) 
-\log_{2}8 = 3
-\log_{10}x = 1037
-$$
+
+$O(\log n)$
+$\Theta(\log n)$
+$\Omega(\log n)$ 
+$\log_{2}8 = 3$
+$\log_{10}x = 1037$
+
 
 For a sorted array, linear search runs $O(n)$ and binary search runs $O(|log n)$, so therefore the binary search will be faster.
 

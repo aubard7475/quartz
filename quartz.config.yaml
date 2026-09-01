@@ -86,6 +86,9 @@ plugins:
     enabled: true
     options:
       renderEngine: katex
+      customMacros:
+        "\\f": "\\frac"
+        "\\t": "\\text"
     order: 80
   - source: github:quartz-community/citations
     enabled: false
