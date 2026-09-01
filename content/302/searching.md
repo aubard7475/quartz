@@ -74,6 +74,6 @@ O(|log n)
 \log_{10}x = 1037
 $$
 
-For a sorted array, linear search runs $O(n)$ and binary search runs $O(|log n)$
+For a sorted array, linear search runs $O(n)$ and binary search runs $O(|log n)$, so therefore the binary search will be faster.
 
-> [!missing] the part about sorting before sorting on thebottom of the lecture ig
+What if the array is not sorted? It depends on the size of the array.
