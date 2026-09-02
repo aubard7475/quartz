@@ -228,9 +228,10 @@ plugins:
   - source: github:quartz-community/recent-notes
     enabled: false
     options:
-      title: "Recent"
+      title: "Updated"
       limit: 5
       showTags: false
+      hideFolderPages: true
     layout:
       position: right
       priority: 100

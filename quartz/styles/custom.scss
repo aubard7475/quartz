@@ -125,7 +125,8 @@ button.toc-header h3, button.toc-header .fold,
 .page-listing, 
 ::-webkit-scrollbar, 
 .callout[data-callout="blank"] .callout-icon,
-.breadcrumb-element:first-child { 
+.breadcrumb-element:first-child,
+.recent-li .meta time { 
     display: none;
 }
 
