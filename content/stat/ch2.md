@@ -42,15 +42,22 @@ The **level of measurement** refers to the nature and properties of the scales u
 
 - **Nominal scales** represent labels or names for categories which do not have any inherent order or numerical significance.
 
+| Level | Type | Ordered? | Equal intervals? | True 0? | Capability | Examples|
+| - | - | - | - | - | - | - |
+| Ratio | Numbered | Yes | Yes | Yes   | You can multiply, divide, find ratios and porportions | Volume, height, time, distance, money |
+| Interval | Numebred | Yes | Yes | No | Difference between two values remains constant. You can add, subtract, find the mean and standard deviation. | Temperature, year |
+| Ordinal | Category | Yes | No | No   | Allows you to rank items. You can find the median and range. | Are you happy? What is your pain level? |
+| Nominal | Category | No | No | No    | Labels or name of categories. You can find the mode. | Eye color, country of birth, yes/no questions |
+
 ***
 
 # $2.3$ Empiricism at Work: Data Collection
 
 **Confounding variables** are "extra" variables that are not accounted for during experimentation and can cause results to become skewed.
 
-- A **response variable** measures the outcome of interest in an experiment or study.
+- A **response variable** (y-axis) measures the outcome of interest in an experiment or study.
 
-- An **explanatory variable** causes or explains changes in a response variable.
+- An **eXplanatory variable** (x-axis) causes or explains changes in a response variable.
 
 A **placebo** is a fake treatment that has the potential to cause a response.
 
@@ -66,9 +73,9 @@ A **placebo** is a fake treatment that has the potential to cause a response.
 
 **Quantitative data** are numerical data that are objectively measured on an interval or ratio scale.
 
-Data in which the observations are restricted to a set of distinct numerical values that possess gaps is called **discrete**. Counting things.
+- Data in which the observations are restricted to a set of distinct numerical values that possess gaps is called **discrete**. Counting things.
 
-Data that can take on any value within some interval is called **continuous**. Measureable.
+- Data that can take on any value within some interval is called **continuous**. Measureable.
 
 ***
 

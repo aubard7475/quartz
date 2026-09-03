@@ -35,7 +35,7 @@ $IC = \t{Instruction Count}$
 > \text{Thus, computer A is 1.5 times faster than computer B.}
 > $$
 
-> [!blank]- (b) Our favorite program runs in 10 seconds on computer A, which has a 2 GHz clock. We are trying to help a compute rdesigned build a computer, B, which will run this program in 6 seconds. THe designed has determined that if computer B has 1.2 times as many clock cycles as computer A. > What clock rate shoud we tell the deigner to target?
+> [!blank]- (b) Our favorite program runs in 10 seconds on computer A, which has a 2 GHz clock. We are trying to help a compute rdesigned build a computer, B, which will run this program in 6 seconds. The designer has determined that if computer B has 1.2 times as many clock cycles as computer A. What clock rate shoud we tell the deigner to target?
 > 
 > $$
 > ET_A = 10 s \\
@@ -57,7 +57,7 @@ $IC = \t{Instruction Count}$
 > \text{Thus, we are expecting a } 40\% { improvement.}
 > $$
 
-> [!blank]- (c)
+<!-- > [!blank]- (c)
 > $$
 > CT_A = 250 ps\\
 > CPI_A = 2.0\\
@@ -86,4 +86,4 @@ $$
 P = \frac{1}{ET}
 ET_{P1} = \frac{CPI_{P1}}{CR_{P1}} = \frac{1.5}{3 \cdot 10^9} = \frac{1}{2 \cdot 10^9} = 0.5 nanoseconds
 $$
-b.
+b. -->

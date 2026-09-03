@@ -10,7 +10,7 @@ If we are adding or subtracting by some constant, it is linear.
 ```cpp
 for (int i=0; i<n; i++)
   cout << "wow";
-``
+```
 $$
 \sum_{i=0}^{n-1} = n = \Theta(n)
 $$
@@ -26,7 +26,7 @@ $$
 ```cpp
 for (int i=0; i<n/2; i++)
   cout << "wow";
-``
+```
 $$
 \sum_{n/2 - 1}^{i=0} \Theta(1) = \frac{n}{2} = \Theta(n)
 $$
@@ -39,7 +39,7 @@ $$
 \sum_{n-1}^{i=0} \Theta(1) = \frac{n}{3} = \Theta(n)
 $$
 
-``cpp
+```cpp
 for (int i=n; i>0; i--)
   cout << "wow";
 ```
