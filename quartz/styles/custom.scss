@@ -25,16 +25,32 @@
     gap: 0rem;
 }
 // Enlarge effect on files in Exploerer
-.explorer a:hover, .explorer .nav-file-title.active {
-    font-size: 1.025em;
-    transition: font-size 0.15s ease;
-}
-.explorer a {
-    transition: font-size 0.15s ease;
-}
+// .explorer a:hover, .explorer .nav-file-title.active {
+//     font-size: 1.025em;
+//     transition: font-size 0.15s ease;
+// }
+// .explorer a {
+//     transition: font-size 0.15s ease;
+// }
 // Underline effect on file currnetly hovered over in Explorer
-.explorer a:hover {
-    text-decoration: underline;
+.explorer a {
+    position: relative;
+    text-decoration: none;
+}
+
+.explorer a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background: currentColor;
+    transition: width 0.2s ease;
+}
+
+.explorer a:hover:not(.active)::after {
+    width: 100%;
 }
 // Coloration of the tabs in the Table of Contents
 ul.toc-content.overflow>li>a.in-view {
