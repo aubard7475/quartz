@@ -63,7 +63,8 @@ ExternalPlugin.RecentNotes({
   filter: (f) => {
     return !f.slug.startsWith("images") &&
            !f.slug.startsWith("unlisted") &&
-           !f.slug.startsWith("geol")
+           !f.slug.startsWith("geol") &&
+           !f.slug.startsWith("g")
   },
 })
 
