@@ -17,12 +17,12 @@ order: 2
 
 | Name | Value|
 | - | - |
-| Gigabyte | $10^9$ |
-| Terabyte | $10^12 |
-| Petabyte | $10^15$ |
-| Exabyte | $10^18$ |
-| Zettabyte | $10^21$ |
-| Yottabyte | $10^21$ |
+| Gigabyte | $10^{9}$ |
+| Terabyte | $10^{12}$ |
+| Petabyte | $10^{15}$ |
+| Exabyte | $10^{18}$ |
+| Zettabyte | $10^{21}$ |
+| Yottabyte | $10^{21}$ |
 
 ***
 
