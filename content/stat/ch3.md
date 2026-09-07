@@ -3,7 +3,7 @@ title: Chapter 3
 order: 3
 ---
 
-> The majority of the content on this page is copy-pasted from the textbook.
+> [!abstract] The majority of the content on this page is copy-pasted from the textbook.
 
 # $3.1$ Frequency Distributions
 

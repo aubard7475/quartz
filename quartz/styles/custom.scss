@@ -74,11 +74,12 @@ ul.toc-content.overflow>li>a {
 }
 // Only displays recent notes on the home page
 // body:not([data-slug="index"]) .recent-notes {
-//     display: none;
-// }
-// Centers the recent notes on the home page
-// .recent-notes {
-//     text-align: center;
+//         display: none;
+//         }
+//         Centers the recent notes on the home page
+//         .recent-notes {
+//             text-align: center;
+//             }
 // }
 
 
@@ -108,7 +109,8 @@ a.internal:hover {
 }
 // Makes bolded text more bold
 strong {
-  font-weight: 900;
+  font-weight: normal;
+  color:#ED7014;
 }
 // Creates a blank callout
 .callout {

@@ -3,7 +3,7 @@ title: Chapter 4
 order: 4
 ---
 
-> The majority of the content on this page is copy-pasted from the textbook.
+> [!abstract] The majority of the content on this page is copy-pasted from the textbook.
 
 # $4.1$ Measures of Location
 

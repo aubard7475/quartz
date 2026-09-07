@@ -3,7 +3,7 @@ title: Chapter 2
 order: 2
 ---
 
-> The majority of the content on this page is copy-pasted from the textbook.
+> [!abstract] The majority of the content on this page is copy-pasted from the textbook.
 
 # $2.1$ The Evolution of Data
 

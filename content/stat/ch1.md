@@ -3,7 +3,7 @@ title: Chapter 1
 order: 1
 ---
 
-> The majority of the content on this page is copy-pasted from the textbook.
+> [!abstract] The majority of the content on this page is copy-pasted from the textbook.
 
 **Empiricism** rests on the idea that nature is governed by laws or principles that create predictable patterns which can be discovered through careful observation. 
 
