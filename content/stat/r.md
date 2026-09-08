@@ -48,6 +48,18 @@ median(z)
 names(table(z))[table(z) == max(table(z))] # mode
 sum(z)
 mean(z, trim = 0.10) # trimmed mean
-zoo::rollmean(z, 2) # moving average
+zoo::rollmean(z, 2)  # moving average
 a * 6 - sum(z) # missing value where a is the mean and b is the amount of data
+var(z)                # sample variance
+mean((z - mean(z))^2) # pop variance
+sd(z)                       # sample std deviation
+sqrt(mean((z - mean(z))^2)) # pop std deviation
+sqrt(x)
+((sd(z))/(mean(z)))*100 # coefficent of variation
+# chebyshevs theorm when given bound (this prob only makes sense to me, ask if u wanna know)
+mean <- 225000
+s <- 7250
+dist <- mean-203250
+k <- dist/s
+1 - (1)/(k^2)
 ```

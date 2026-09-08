@@ -1,7 +1,6 @@
 ---
 title: What is Geology?
 order: 10
-unlisted: true
 ---
 
 Nevada means "snowy"

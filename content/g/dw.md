@@ -3,7 +3,7 @@ title: Dandy's World Toons
 order: -1
 unlisted: false
 ---
-
+<p>Note: Due to weirdness that idk how to fix, reload the page if u see the wrong content</p>
 <br>
 
 <input id="search" type="text" placeholder="Type here to filter">

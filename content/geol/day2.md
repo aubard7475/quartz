@@ -1,7 +1,6 @@
 ---
 title: Day 2
 order: 15
-unlisted: true
 ---
 
 Planet: Object that orbits a star that has cleared its neighborhood

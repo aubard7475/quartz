@@ -53,7 +53,7 @@ sortFn: (a, b) => {
     return (
       !node.slug.startsWith("images") &&
       !node.slug.startsWith("unlisted") &&
-      !node.slug.startsWith("geol")
+      !node.slug.startsWith("g")
     )
   },
 })

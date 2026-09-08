@@ -82,7 +82,7 @@ The **mode** of a data set is the most frequently occurring value.
 
 A **moving average** is obtained by adding consecutive observations for a number of periods and dividing the result by the number of periods included in the average.
 
-# $4.1$ Measures of Dispersion
+# $4.2$ Measures of Dispersion
 
 The distance that a point is from its mean is called a **deviation from the mean**.
 
@@ -119,20 +119,26 @@ If the distribution of the data is bell-shaped, then
 
 The proportion of any data set lying within $k$ standard deviations of the mean is at least:
 $$
-1 - \frac{1}{k^2}, \text{ for } k>1
+1 - \frac{1}{k^2}, \text{ for } k>1 \\
+k = \t{mean} - \t{bound} \\
+\t{You may need to work bardwards if given the answer.}
 $$
 If $k=2$, at least $1-\frac{1}{2^2}-\frac{3}{4}$ of the data values lie within 2 standard deviations of the mean, for any data set.
 If $k=3$, at least $1-\frac{1}{3^2}-\frac{8}{9}$ of the data values lie within 3 standard deviations of the mean, for any data set.
 
 ## Coefficient of Variation
 
+The lower the coefficent of variation, the closer the data is.
+
 For population data, the measure is defined as:
 $$
 \\[0.5em]
 (\frac{𝜎}{𝜇}\cdot 100)%
 $$
+where $𝜎$ is the standard deviation and $𝜇$ is the mean.
 
 For population data, the measure is defined as:
 $$
 (\frac{𝑠}{\bar{x}}\cdot 100)%
 $$
+where $𝑠$ is the standard deviation and $\bar{x}$ is the mean.

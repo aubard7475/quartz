@@ -1,6 +1,6 @@
 ---
 title: Geology 101
-unlisted: true
+order: 900
 ---
 
 | Grading | | |

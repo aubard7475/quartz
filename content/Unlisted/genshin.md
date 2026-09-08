@@ -4,7 +4,6 @@ order: -1
 unlisted: true
 ---
 
-<br>
 
 <input id="search" type="text" placeholder="Type here to filter">
 
