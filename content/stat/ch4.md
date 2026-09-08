@@ -81,3 +81,58 @@ The **mode** of a data set is the most frequently occurring value.
 | Nominal |      |        | ✔   |
 
 A **moving average** is obtained by adding consecutive observations for a number of periods and dividing the result by the number of periods included in the average.
+
+# $4.1$ Measures of Dispersion
+
+The distance that a point is from its mean is called a **deviation from the mean**.
+
+The **range** is the difference between the largest and smallest data values.
+
+The **sample mean absolute deviation** (MAD) is the average distance from the mean and is given by:
+$$
+\frac{\sum | x_i - x |}{n}
+$$
+
+The **variance** of a data set containing the complete set of *population* data is given by:
+$$
+a^2 = \frac{\sum (x_i - 𝜇)^2}{N}
+$$
+where $μ$ is the population mean of the data set, $N$ is the size of the population, and $x_i$ is a particular value in the data set. $a^2$ is pronounced *sigma squared*, and is called the **population variance**.
+
+The **variance** of a data set containing *sample* data is given by:
+$$
+s^2 = \frac{\sum (x_i - x)^2}{n-1}
+$$
+where $𝑥$ is the mean of the sample data, $n$ is the size of the sample, and $𝑥_i$ is a particular value in the sample. $𝑠^2$ is called the sample variance.
+
+The **standard deviation** is also a measure of how much the data varies around the mean. It is found by taking the square root of the variance.
+
+If the distribution of the data is bell-shaped, then
+
+- About 68% of the data should lie within 1 standard deviation of the mean.
+
+- About 95% of the data should lie within 2 standard deviations of the mean.
+
+- About 99.7% of the data should lie within 3 standard deviations of the mean.
+
+## Chebyshev's Theorem
+
+The proportion of any data set lying within $k$ standard deviations of the mean is at least:
+$$
+1 - \frac{1}{k^2}, \text{ for } k>1
+$$
+If $k=2$, at least $1-\frac{1}{2^2}-\frac{3}{4}$ of the data values lie within 2 standard deviations of the mean, for any data set.
+If $k=3$, at least $1-\frac{1}{3^2}-\frac{8}{9}$ of the data values lie within 3 standard deviations of the mean, for any data set.
+
+## Coefficient of Variation
+
+For population data, the measure is defined as:
+$$
+\\[0.5em]
+(\frac{𝜎}{𝜇}\cdot 100)%
+$$
+
+For population data, the measure is defined as:
+$$
+(\frac{𝑠}{\bar{x}}\cdot 100)%
+$$
